@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+    .s{
+        width: 200px;
+        height: 300px;
+    }
+    .T{
+        color: black;
+    }
     .btn-circle {
         width: 30px !important;
         height: 30px !important;
@@ -150,12 +157,12 @@
                 <p class="fw-bold">$2,673.78</p>
                 <br>
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-primary" type="button">Add to cart</button>
+                    <button class="btn btn-dark" type="button">Add to cart</button>
                     <button type="button" class="btn btn-dark">Buy now</button>
                 </div>
                 <div class="my-3">
                     <button type="button" class="btn btn-dark btn-circle me-2" title="สีดำ"></button>
-                    <button type="button" class="btn btn-white btn-circle me-2" title="สีขาว"></button>
+                    <a href="buy.html"><button type="button" class="btn btn-white btn-circle me-2" title="สีขาว"></button></a>
                 </div>
                 <p>Dimensions: Width: 18.5cm, Height: 15.5cm, Depth: 8.5cm</p>
                 <p>100% Leather
@@ -165,31 +172,146 @@
             </div>
         </div>
     </div>
-    <br class="m-3">
-    <div class="container text-center">
-        <div class="row row-cols-4">
-            <div class="col">
-                <div class="carousel-item active">
-                    <img src="images/items/2.jpg" width="250" class="img-thumbnail" alt="...">
-                </div>
-            </div>
-            <div class="col">
-                <div class="carousel-item active">
-                    <img src="images/items/3.jpg" width="250" class="img-thumbnail" alt="...">
-                </div>
-            </div>
-            <div class="col">
-                <div class="carousel-item active">
-                    <img src="images/items/4.jpg" width="250" class="img-thumbnail" alt="...">
-                </div>
-            </div>
-            <div class="col">
-                <div class="carousel-item active">
-                    <img src="images/items/5.jpg" width="250" class="img-thumbnail" alt="...">
+    <br>
+    <div class="container">
+        <div class="row px-3">
+            <ul class="nav nav-underline">
+                <li class="nav-item ">
+                    <a class="nav-link active T" aria-current="page"
+                        href="pos.html">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link active T" href="#">womens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active T" href="products.html">Gucci</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active T" href="#">Bags</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active T" aria-disabled="page"
+                        href="#">Shoulder Bags</a>
+                </li>
+            </ul>
+            <br>
+            <div class="card m-3 ">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="card col-md-3 p-2 m-4"
+                            style="width: 12rem;">
+                            <img src="images/items/2.jpg"
+                                class="card-img-top"
+                                alt="...">
+                            <div class="info-wrap ">
+                                <br>
+                                <p class="title text-truncate fw-bold">Gucci
+                                    Diana Medium Shoulder Bag
+                                </p>
+                                <div class="row">
+                                    <div class="bi-circle-fill  col-md-2"
+                                        style="color: black;"></div>
+                                </div>
+                                <div class="price mt-1 fw-bold">$2,481.14</div>
+                                <!-- price-wrap.// -->
+                            </div>
+                        </div>
+                        <div class="card col-md-3 p-2 m-4"
+                            style="width: 12rem;">
+                            <div class="row mb-5 mt-5">
+                                <img src="images/items/3.jpg"
+                                    class="card-img-top"
+                                    alt="...">
+                            </div>
+                            <div class="row">
+                                <div class="info-wrap ">
+                                    <p class="title text-truncate fw-bold">Gucci
+                                        Diana Medium Shoulder Bag
+                                    </p>
+                                    <div class="row">
+                                        <div
+                                            class="bi-circle-fill  col-md-2"
+                                            style="color: black;"></div>
+                                    </div>
+                                    <div class="price mt-1 fw-bold">$2,481.14</div>
+                                    <!-- price-wrap.// -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3 p-2 m-4"
+                            style="width: 12rem;">
+                            <div class="row mb-5 mt-4">
+                                <img src="images/items/4.jpg"
+                                    class="card-img-top"
+                                    alt="...">
+                            </div>
+                            <div class="row">
+                                <div class="info-wrap ">
+                                    <p class="title text-truncate fw-bold">Gucci
+                                        Padded Chained</p>
+                                    <div class="row">
+                                        <div
+                                            class="bi-circle-fill  col-md-2"
+                                            style="color: rgb(163, 159, 159);"></div>
+                                        <div
+                                            class="bi-circle-fill  col-md-2"
+                                            style="color: black;"></div>
+                                    </div>
+                                    <div class="price mt-1 fw-bold">$2,283.90</div>
+                                    <!-- price-wrap.// -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3 p-2 m-4"
+                            style="width: 12rem;">
+                            <div class="row mb-5 mt-4">
+                                <img src="images/items/5.jpg"
+                                    class="card-img-top"
+                                    alt="...">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="info-wrap ">
+                                    <p class="title text-truncate fw-bold">Gucci
+                                        Double G Logo Mini Shoulder Bag</p>
+                                    <div class="row">
+                                        <div
+                                            class="bi-circle-fill  col-md-2"
+                                            style="color: palevioletred;"></div>
+                                    </div>
+                                    <div class="price mt-1 fw-bold">$2,055.51</div>
+                                    <!-- price-wrap.// -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3 p-2 m-4"
+                            style="width: 12rem;">
+                            <div class="row mb-5 mt-5">
+                                <img src="images/items/6.jpg"
+                                    class="card-img-top"
+                                    alt="...">
+                            </div>
+                            <br class="m-2">
+                            <div class="row">
+                                <div class="info-wrap ">
+                                    <p class="title text-truncate fw-bold">Gucci
+                                        GG Petite Small Shoulder Bag</p>
+                                    <div class="row">
+                                        <div
+                                            class="bi-circle-fill  col-md-2"
+                                            style="color: black;"></div>
+                                    </div>
+                                    <div class="price mt-1 fw-bold">$2,330.40</div>
+                                    <!-- price-wrap.// -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div>  
+    
 </body>
 
 </html>
