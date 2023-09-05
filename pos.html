@@ -15,7 +15,7 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
             integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
             crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <style>
         .s{
@@ -77,18 +77,21 @@
 
             </div>
         </div>
-        <div class="m-3">
-            <div id="carouselExampleAutoplaying" class="carousel slide h-25"
+        <div class="m-3 text-center">
+            <div id="carouselExampleAutoplaying" class="carousel slide"
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src class="d-block w-100" alt="...">
+                        <img src="images/items/noname.png" width="1080"
+                            alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src class="d-block w-100" alt="...">
+                        <img src="images/items/noname.png" width="1080"
+                            alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src class="d-block w-100" alt="...">
+                        <img src="images/items/noname.png" width="1080"
+                            alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button"
@@ -110,7 +113,7 @@
         <div class="card m-5 ">
             <div class="card-body">
                 <div class="container-fluid">
-                    <div class="container-md">
+                    <div class="container-md ">
                         <div class="col-md-12">
                             <!-- Row 1 -->
                             <!-- ใส่ class row กับ my-5 ให้ div เพื่อกำหนดให้ div นี้เป็น row ที่มีระห่าง (margin) กับ elements อื่นๆ  -->
@@ -118,49 +121,54 @@
                                 <div class="row my-5">
                                     <!-- Column 1 -->
                                     <!-- ใส่ class col-sm-3 ให้ div เพื่อกำหนดให้ div นี้เป็น column 3 หน่วย (1 row มีขนาดสูงสุด 12 หน่วย) -->
-                                    <div class="col-sm-1">
-                                        <!-- ใส่ class img-thumbnail ให้กับรูปภาพเพื่อจัดรูปแบบรูปภาพให้เป็น thumbnail -->
-                                        <a href="#">
-                                            <img
-                                                class="img-fluid h-90 border border-dark"
-                                                src="./images/items/บิวตี้.jpg">
-                                        </a>
-                                    </div>
+                                            <div class="md-group col-sm-1 ">
+                                                <!-- ใส่ class img-thumbnail ให้กับรูปภาพเพื่อจัดรูปแบบรูปภาพให้เป็น thumbnail -->
+                                                <a href="#">
+                                                    <img
+                                                        class="img-fluid h-90 border border-dark img-circle"
+                                                        src="./images/items/บิวตี้.jpg"></a>
+                                                        <p class="m-1">Beauty&Personal Care</p>
+                                                
+                                            </div>
                                     <!-- Column 2 -->
                                     <div class="col-sm-1">
                                         <a href="#">
                                             <img
-                                                class="img-fluid h-90 border border-dark"
-                                                src="./images/items/รองเท้า.jpg">
-                                        </a>
+                                                class="img-fluid h-90 border border-dark img-circle"
+                                                src="./images/items/รองเท้า.jpg"></a>
+                                                <p class=" m-1">Women Shoes</p>
+                                        
                                     </div>
                                     <div class="col-sm-1">
                                         <a href="#">
                                             <img
-                                                class="img-fluid h-90 border border-dark"
+                                                class="img-fluid h-90 border border-dark img-circle"
                                                 src="./images/items/เสื้อผ้าผู้ฟญิง.jpg">
                                         </a>
+                                        <p class=" m-1">Women Clothes</p>
                                     </div>
                                     <div class="col-sm-1">
                                         <a href="#">
                                             <img
-                                                class="img-fluid h-90 border border-dark"
+                                                class="img-fluid h-90 border border-dark img-circle"
                                                 src="./images/items/ของใช้ในบ้าน.jpg">
                                         </a>
+                                        <p class=" m-1">Hom Appliances</p>
                                     </div>
                                     <!-- Column 3 -->
                                     <div class="col-sm-1">
                                         <a href="#">
                                             <img
-                                                class="img-fluid h-90 border border-dark"
+                                                class="img-fluid h-90 border border-dark img-circle"
                                                 src="./images/items/อิเล็กทรอนิกส์.jpg">
                                         </a>
+                                        <p class=" m-1">Computers&Laptops</p>
                                     </div>
                                     <!-- Column 4 -->
                                     <div class="col-sm-1">
                                         <a href="#">
                                             <img
-                                                class="img-fluid h-90 border border-dark"
+                                                class="img-fluid h-90 border border-dark img-circle"
                                                 src="./images/items/ยา.jpg">
                                         </a>
                                     </div>
@@ -168,7 +176,7 @@
                                     <div class="col-sm-1">
                                         <a href="#">
                                             <img
-                                                class="img-fluid h-90 border border-dark"
+                                                class="img-fluid h-90 border border-dark img-circle"
                                                 src="./images/items/เครื่องครัว.jpg">
                                         </a>
                                     </div>
@@ -176,35 +184,35 @@
                                     <div class="col-sm-1">
                                         <a href="#">
                                             <img
-                                                class="img-fluid h-90 border border-dark"
+                                                class="img-fluid h-90 border border-dark img-circle"
                                                 src="./images/items/เคื่องน้อ.jpg">
                                         </a>
                                     </div>
                                     <div class="col-sm-1">
                                         <a href="#">
                                             <img
-                                                class="img-fluid h-90 border border-dark"
+                                                class="img-fluid h-90 border border-dark img-circle"
                                                 src="./images/items/เคื่องประดับ.jpg">
                                         </a>
                                     </div>
                                     <div class="col-sm-1">
                                         <a href="#">
                                             <img
-                                                class="img-fluid h-90 border border-dark"
+                                                class="img-fluid h-90 border border-dark img-circle"
                                                 src="./images/items/เสื้อผ้าผู้ชาย.jpg">
                                         </a>
                                     </div>
                                     <div class="col-sm-1">
                                         <a href="#">
                                             <img
-                                                class="img-fluid h-90 border border-dark"
+                                                class="img-fluid h-90 border border-dark img-circle"
                                                 src="./images/items/อุปกรณ์กีฬา.jpg">
                                         </a>
                                     </div>
                                     <div class="col-sm-1">
-                                        <a href="#">
+                                        <a href="brand.html">
                                             <img
-                                                class="img-fluid h-90 border border-dark"
+                                                class="img-fluid h-90 border border-dark img-circle"
                                                 src="./images/items/อีกระเป๋า.jpg">
                                         </a>
                                     </div>
@@ -220,12 +228,12 @@
 
         <div class="card m-3 ">
             <div class="card-body">
-                <h5 class="card-title">Products by seller</h5>
+                <h5 class="card-title">Products </h5>
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6 pb-3">
                         <div class="card card-product-grid p-3">
-                            <a href="#" class="img-wrap text-center"> <img
-                                    src="images/items/1.jpg" class="s"
+                            <a href="#" class="img-wrap text-center">
+                                <img src=" images/items/1.jpg" class="s"
                                     alt="Product"> </a>
                             <div class="info-wrap">
                                 <br>
