@@ -57,7 +57,7 @@
         <a href="orders-detail.html">Order detail</a>
       </div> 
     </li>
-    <liBackoffi class="menu-item has-submenu active"> 
+    <liBackoffi class="menu-item has-submenu Enabled"> 
       <a class="menu-link" href="Members-list.html"> <i class="icon material-icons md-store"></i> 
         <span class="text">Members</span> 
       </a> 
@@ -87,6 +87,28 @@
                 </div>
             </form>
         </div>
+        <div class="col-nav">
+             <button class="btn btn-icon btn-mobile me-auto" data-trigger="#offcanvas_aside"> <i class="md-28 material-icons md-menu"></i> </button>
+             <ul class="nav">
+              <li class="nav-item">
+                  <a class="nav-link btn-icon" onclick="darkmode(this)" title="Dark mode" href="#"> <i class="material-icons md-nights_stay"></i> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-icon" href="#"> <i class="material-icons md-notifications_Enabled"></i> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> English </a>
+              </li>
+              <li class="dropdown nav-item">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#"> <img class="img-xs rounded-circle" src="images/people/avatar1.jpg" alt="User"></a>
+                <div class="dropdown-menu dropdown-menu-end">
+                  <a class="dropdown-item" href="#">My profile</a>
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <a class="dropdown-item text-danger" href="#">Exit</a>
+                </div>
+              </li>
+            </ul> 
+        </div>
     </header>
 
 <section class="content-main">
@@ -109,7 +131,6 @@
                         <option>Status</option>
                         <option>Enabled</option>
                         <option>Disabled</option>
-                        <option>Show all</option>
                     </select>
                 </div>
                 <div class="col-lg-2 col-md-3 col-6">
@@ -148,7 +169,7 @@
                                 </a>
                             </td>
                             <td>Alice2Delray@gmail.com</td>
-                            <td><span class="badge rounded-pill alert-success">Active</span></td>
+                            <td><span class="badge rounded-pill alert-success">Enabled</span></td>
                             <td>08.07.2020</td>
                             <td class="text-end">
                                 <a href="./View-member.html" class="btn btn-light">View</a>
@@ -167,7 +188,7 @@
                                 </a>
                             </td>
                             <td>monalisa@example.com</td>
-                            <td><span class="badge rounded-pill alert-success">Active</span></td>
+                            <td><span class="badge rounded-pill alert-success">Enabled</span></td>
                             <td>11.07.2020</td>
                             <td class="text-end">
                                 <a href="#" class="btn btn-light">View</a>
@@ -186,7 +207,7 @@
                                 </a>
                             </td>
                             <td>mrjohn@example.com</td>
-                            <td><span class="badge rounded-pill alert-success">Active</span></td>
+                            <td><span class="badge rounded-pill alert-success">Enabled</span></td>
                             <td>08.07.2020</td>
                             <td class="text-end">
                                 <a href="#" class="btn btn-light">View</a>
@@ -205,7 +226,7 @@
                                 </a>
                             </td>
                             <td>eleanor2020@example.com</td>
-                            <td><span class="badge rounded-pill alert-danger">Inactive</span></td>
+                            <td><span class="badge rounded-pill alert-danger">Disabled</span></td>
                             <td>08.07.2020</td>
                             <td class="text-end">
                                 <a href="#" class="btn btn-light">View</a>
@@ -224,7 +245,7 @@
                                 </a>
                             </td>
                             <td>someone@mymail.com</td>
-                            <td><span class="badge rounded-pill alert-success">Active</span></td>
+                            <td><span class="badge rounded-pill alert-success">Enabled</span></td>
                             <td>20.11.2019</td>
                             <td class="text-end">
                                 <a href="#" class="btn btn-light">View</a>
@@ -243,7 +264,7 @@
                                 </a>
                             </td>
                             <td>eleanor2020@example.com</td>
-                            <td><span class="badge rounded-pill alert-danger">Inactive</span></td>
+                            <td><span class="badge rounded-pill alert-danger">Disabled</span></td>
                             <td>08.07.2020</td>
                             <td class="text-end">
                                 <a href="#" class="btn btn-light">View</a>
@@ -262,7 +283,7 @@
                                 </a>
                             </td>
                             <td>eleanor2020@example.com</td>
-                            <td><span class="badge rounded-pill alert-danger">Inactive</span></td>
+                            <td><span class="badge rounded-pill alert-danger">Disabled</span></td>
                             <td>08.07.2020</td>
                             <td class="text-end">
                                 <a href="#" class="btn btn-light">View</a>
@@ -281,7 +302,7 @@
                                 </a>
                             </td>
                             <td>alex@gmail.org</td>
-                            <td><span class="badge rounded-pill alert-success">Active</span></td>
+                            <td><span class="badge rounded-pill alert-success">Enabled</span></td>
                             <td>08.07.2020</td>
                             <td class="text-end">
                                 <a href="#" class="btn btn-light">View</a>
@@ -300,7 +321,7 @@
                                 </a>
                             </td>
                             <td>eleanor2020@example.com</td>
-                            <td><span class="badge rounded-pill alert-success">Active</span></td>
+                            <td><span class="badge rounded-pill alert-success">Enabled</span></td>
                             <td>08.07.2020</td>
                             <td class="text-end">
                                 <a href="#" class="btn btn-light">View</a>
@@ -319,7 +340,7 @@
                                 </a>
                             </td>
                             <td>eleanor2020@example.com</td>
-                            <td><span class="badge rounded-pill alert-success">Active</span></td>
+                            <td><span class="badge rounded-pill alert-success">Enabled</span></td>
                             <td>08.07.2020</td>
                             <td class="text-end">
                                 <a href="#" class="btn btn-light">View</a>
