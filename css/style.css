@@ -3,3 +3,7 @@ img.img-circle {
     width: 50px;
     height: 50px;
 }
+
+.borderless {
+    border: 0 !important;
+}
