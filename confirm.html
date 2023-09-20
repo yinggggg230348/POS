@@ -79,6 +79,12 @@
         background-color: #FFFFFF !important;
         border-color: #FFFFFF !important;
     }
+    .border-css{
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid black;
+    }
 </style>
 <body class="bg-light">
     <div style="background-color: #bbdefa;" class="shadow p-2">
@@ -134,10 +140,7 @@
                   <h2 class="title">Payment</h2>
                   <header class="card-header">
                       <div class="align-items-center">
-                        <div class="col-sm-12 col-lg-12 col-md-12z">
-                          <span>
-                            <i class="material-icons md-calendar_today"></i> <b>Wed, Aug 19,2020, 4:34PM </b>
-                          </span> <br>
+                        <div class="col-sm-12 col-lg-12 col-md-12">
                           <small class="text-muted">Order ID: 0121</small>
                         </div>
                       </div>
@@ -234,11 +237,50 @@
               </div>
               <div class="col-6 ">
                   <img class="m-3 w-75 h-50" src="images/items/pay.jpg" alt="">
-                  <input class="form-control" type="file">
+                  <div class="col-sm-12 col-lg-12 col-md-12">
+                  <span>
+                    <i class="material-icons md-calendar_today"></i> <b>Wed, Aug 19,2020, 4:34PM </b>
+                  </span>
+                </div> 
+                  <input class="form-control mt-3" type="file">
+                  <div class="row ">
+                    <div class="col-4 mt-4"><dt>Transfer From :</dt></div>
+                    <div class="col-8">
+                      <div class="dropdown">
+                      <div class="dropdown-toggle mt-4" href="#"role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="w-50 h-25" src="images/Bank/ธนาคารออมสิน.jpg" alt="">
+                      </div>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><img class="w-50 h-25" src="images/Bank/krungthai_bank.jpg" alt=""></a></li>
+                        <hr>
+                        <li><a class="dropdown-item" href="#"><img class="w-50 h-25" src="images/Bank/ธกส..jpg" alt=""></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="row ">
+                    <div class="col-4 mt-3"><dt>To :</dt></div>
+                    <div class="col-8">
+                      <div class="dropdown">
+                      <div class="dropdown-toggle mt-4" href="#"role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="w-50 h-25" src="images/Bank/krungthai_bank.jpg" alt="">
+                      </div>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><img class="w-50 h-25" src="images/Bank/ธนาคารออมสิน.jpg" alt=""></a></li>
+                        <hr>
+                        <li><a class="dropdown-item" href="#"><img class="w-50 h-25" src="images/Bank/ธกส..jpg" alt=""></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="row ">
+                    <div class="col-4 mt-3"><dt>Total :</dt></div>
+                    <div class="col-8 mt-3"><dt>$6,650.75</dt><hr></div>
+                  </div>
                   </div> <!-- col.// -->
-                 <a href="oder.html"> <div class="class= d-flex justify-content-end m-2">
-                      <button type="button" class="btn btn-dark">Confirm</button>
-                  </div></a>
+                  <div class="class= d-flex justify-content-end m-2">
+                    <a href="oder.html"><button type="button" class="btn btn-dark">Confirm</button></a>
+                  </div>
               </div>
       </main>
           </div>
@@ -251,3 +293,4 @@
 </body>
 
 </html>
+ 
