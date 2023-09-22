@@ -47,12 +47,160 @@
                                 placeholder="search"
                                 aria-label="Recipient's username"
                                 aria-describedby="button-addon2">
-                            <button class="btn btn-outline-dark"
+                            <button class="btn btn-outline-dark me-2"
                                 type="button" id="button-addon2">Search</button>
+                            <button type="button" class="btn btn-primary position-relative" data-toggle="modal" data-target="#exampleModal">
+                                <i class="bi bi-cart w-75"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    3
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </button>
                         </div>
-                        <a href="shipping-cart.html" class="text-dark mb-3 mx-3">
-                            <h3><i class="bi bi-cart w-75"></i></h3>
-                        </a>
+                        <!-- Button trigger modal -->
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">shipping cart</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card-body ">
+                                            <div class="row ">
+                                                <div class="col-lg-12 mx-auto text-center">
+                                                    <div class="table-responsive">
+                                                        <table class="table border table-hover table-lg">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="5%"></th>
+                                                                    <th width="40%">Product</th>
+                                                                    <th width="20%">Unit Price</th>
+                                                                    <th width="15%">Quantity</th>
+                                                                    <th width="20%" class="text-end">Total</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="col col-check flex-grow-0 text-center">
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" value>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="itemside">
+                                                                            <div class="left">
+                                                                                <img
+                                                                                    src="images/items/Dress 1.jpg"
+                                                                                    width="40"
+                                                                                    height="50"
+                                                                                    class="img-xs"
+                                                                                    alt="Item">
+                                                                            </div>
+                                                                            <div class="info-wrap">
+                                                                                <p class="title">Dress</p></div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td> $199 </td>
+                                                                    <td><i class="bi bi-dash"></i> 1
+                                                                        <i class="bi bi-plus"></i>
+                                                                        <i class="bi bi-trash-fill float-end "></i>
+                                                                    </td>
+                                                                    <td class="text-end"> $199</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="col col-check flex-grow-0 text-center">
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" value>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="itemside">
+                                                                            <div class="left">
+                                                                                <img
+                                                                                    src="images/items/Dress 2.jpg"
+                                                                                    width="40"
+                                                                                    height="50"
+                                                                                    class="img-xs"
+                                                                                    alt="Item">
+                                                                            </div>
+                                                                            <div class="info-wrap">
+                                                                                <p class="title">Dress</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td> $118</td>
+                                                                    <td><i class="bi bi-dash"></i> 1
+                                                                        <i class="bi bi-plus"></i>
+                                                                        <i class="bi bi-trash-fill float-end "></i>
+                                                                    </td>
+                                                                    <td class="text-end"> $118</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="col col-check flex-grow-0 text-center">
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" value>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="itemside">
+                                                                            <div class="left">
+                                                                                <img
+                                                                                    src="images/items/Olivia Rubin.jpg"
+                                                                                    width="40"
+                                                                                    height="50"
+                                                                                    class="img-xs"
+                                                                                    alt="Item">
+                                                                            </div>
+                                                                            <div class="info-wrap">
+                                                                                <p class="title">Olivia Rubin</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td> $480</td>
+                                                                    <td><i class="bi bi-dash"></i> 1
+                                                                        <i class="bi bi-plus"></i>
+                                                                        <i class="bi bi-trash-fill float-end"></i>
+                                                                    </td>
+                                                                    <td class="text-end"> $480</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="5">
+                                                                        <ar ticle class="float-end">
+                                                                            <dl class="dlist">
+                                                                                <dt>Subtotal:</dt>
+                                                                                <dd>$797</dd>
+                                                                            </dl>
+                                                                            <a href="shipping.html">
+                                                                                <button type="button" class="btn btn-dark">Check Out</button>
+                                                                            </a>
+                                                                        </ar>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div> <!-- table-responsive// -->
+                                                </div> <!-- col// -->
+                                            </div>
+                                        </div> <!-- card-body end// -->
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Print</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,8 +216,7 @@
                                     alt="Product"> </a>
                             <div class="info-wrap">
                                 <p class="title text-truncate fw-bold">T-Shirt</p>
-                                <div class="price mt-1 fw-bold">$150
-                                </div> <!-- price-wrap.// -->
+                                <div class="price mt-1 fw-bold">$150</div> <!-- price-wrap.// -->
                             </div>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
                                 Buy now
@@ -94,6 +241,7 @@
                                                     <input type="number" name id class="form-control">
                                                     <div class="card-body">
                                                         <h5 class="card-title">T-Shirt</h5>
+                                                        <div class="price mt-1 fw-bold">$150</div>
                                                         <a href="#" class="btn btn-primary">Add to cart</a>
                                                     </div>
                                                 </div>
@@ -115,7 +263,7 @@
                                     alt="Product"> </a>
                             <div class="info-wrap ">
                                 <p class="title text-truncate fw-bold">Off shoulder shirt</p>
-                                <div class="price mt-1 fw-bold">$8.4247</div>
+                                <div class="price mt-1 fw-bold">$142</div>
                             </div>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
                                 Buy now
@@ -140,6 +288,7 @@
                                                     <input type="number" name id class="form-control">
                                                     <div class="card-body">
                                                         <h5 class="card-title">Off shoulder shirt </h5>
+                                                        <div class="price mt-1 fw-bold">$142</div>
                                                         <a href="#" class="btn btn-primary">Add to cart</a>
                                                     </div>
                                                 </div>
@@ -186,6 +335,7 @@
                                                     <input type="number" name id class="form-control">
                                                     <div class="card-body">
                                                         <h5 class="card-title">Dress </h5>
+                                                        <div class="price mt-1 fw-bold">$199</div>
                                                         <a href="#" class="btn btn-primary">Add to cart</a>
                                                     </div>
                                                 </div>
@@ -232,6 +382,7 @@
                                                     <input type="number" name id class="form-control">
                                                     <div class="card-body">
                                                         <h5 class="card-title">Dress </h5>
+                                                        <div class="price mt-1 fw-bold">$118</div>
                                                         <a href="#" class="btn btn-primary">Add to cart</a>
                                                     </div>
                                                 </div>
@@ -278,6 +429,7 @@
                                                     <input type="number" name id class="form-control">
                                                     <div class="card-body">
                                                         <h5 class="card-title">Dress </h5>
+                                                        <div class="price mt-1 fw-bold">$480</div>
                                                         <a href="#" class="btn btn-primary">Add to cart</a>
                                                     </div>
                                                 </div>
@@ -324,6 +476,7 @@
                                                     <input type="number" name id class="form-control">
                                                     <div class="card-body">
                                                         <h5 class="card-title">Party Dress </h5>
+                                                        <div class="price mt-1 fw-bold">$200</div>
                                                         <a href="#" class="btn btn-primary">Add to cart</a>
                                                     </div>
                                                 </div>
@@ -371,6 +524,7 @@
                                                     <input type="number" name id class="form-control">
                                                     <div class="card-body">
                                                         <h5 class="card-title">Kate spade new york</h5>
+                                                        <div class="price mt-1 fw-bold">$278</div>
                                                         <a href="#" class="btn btn-primary">Add to cart</a>
                                                     </div>
                                                 </div>
@@ -417,6 +571,7 @@
                                                     <input type="number" name id class="form-control">
                                                     <div class="card-body">
                                                         <h5 class="card-title">Olivia Rubin</h5>
+                                                        <div class="price mt-1 fw-bold">$480</div>
                                                         <a href="#" class="btn btn-primary">Add to cart</a>
                                                     </div>
                                                 </div>
