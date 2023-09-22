@@ -1,0 +1,461 @@
+<html>
+    <head>
+        <title>Laconic pos</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+            integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+    </head>
+    <style>
+        .s{
+            width: 150px;
+            height: 200px;;
+        }
+    </style>
+    <body class="bg-light">
+        <div style="background-color: #bbdefa;" class="shadow p-2">
+            <div class="container">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark"
+                            style="color: #616A6B ;" aria-current="page"
+                            href="#">
+                            <i class="bi bi-bell"></i> Notifications
+                        </a>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col-sm-12 col-md-2 pb-4">
+                        <img class="img-fluid"
+                            src="https://laconic.co.th/wp-content/uploads/2017/04/cropped-logo-e1624865695804.png"
+                            alt>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-10 d-flex justify-content-center align-items-center">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control"
+                                placeholder="search"
+                                aria-label="Recipient's username"
+                                aria-describedby="button-addon2">
+                            <button class="btn btn-outline-dark"
+                                type="button" id="button-addon2">Search</button>
+                        </div>
+                        <a href="..." class="text-dark mb-3 mx-3">
+                            <h3><i class="bi bi-cart w-75"></i></h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card m-3 ">
+            <div class="card-body">
+                <h5 class="card-title"> Products </h5>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+                        <div class="card card-product-grid p-3">
+                            <a href="#" class="img-wrap text-center">
+                                <img src="images/items/T-Shirt.jpg" class="s"
+                                    alt="Product"> </a>
+                            <div class="info-wrap">
+                                <p class="title text-truncate fw-bold">T-Shirt</p>
+                                <div class="price mt-1 fw-bold">$150
+                                </div> <!-- price-wrap.// -->
+                            </div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                Buy now
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content  ">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="card mx-auto text-center" style="width: 18rem;">
+                                                    <div class="text-center">
+                                                        <img src="images/items/T-Shirt.jpg" class="s" alt="...">
+                                                    </div>
+                                                    <input type="number" name id class="form-control">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">T-Shirt</h5>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- card-product  end// -->
+                    </div> <!-- col.// -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+                        <div class="card card-product-grid  p-3">
+                            <a href="#" class="img-wrapm text-center">
+                                <img
+                                    src="images/items/Off-shoulder-shirt.jpg"
+                                    class="s "
+                                    alt="Product"> </a>
+                            <div class="info-wrap ">
+                                <p class="title text-truncate fw-bold">Off shoulder shirt</p>
+                                <div class="price mt-1 fw-bold">$8.4247</div>
+                            </div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                                Buy now
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle1" aria-hidden="true">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content  ">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="card mx-auto text-center" style="width: 18rem;">
+                                                    <div class="text-center">
+                                                        <img src="images/items/Off-shoulder-shirt.jpg" class="s" alt="...">
+                                                    </div>
+                                                    <input type="number" name id class="form-control">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Off shoulder shirt </h5>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- price-wrap.// -->
+                            </div>
+                        </div> <!-- card-product  end// -->
+                    </div> <!-- col.// -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+                        <div class="card card-product-grid  p-3">
+                            <a href="#" class="img-wrap text-center"> <img
+                                    src="images/items/Dress 1.jpg" class="s"
+                                    alt="Product"> </a>
+                            <div class="info-wrap ">
+                                <p class="title text-truncate fw-bold">Dress</p>
+                                <div class="price mt-1 fw-bold">$199</div>
+                                <!-- price-wrap.// -->
+                            </div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2">
+                                Buy now
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle2" aria-hidden="true">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content  ">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="card mx-auto text-center" style="width: 18rem;">
+                                                    <div class="text-center">
+                                                        <img src="images/items/Dress 1.jpg" class="s" alt="...">
+                                                    </div>
+                                                    <input type="number" name id class="form-control">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Dress </h5>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- price-wrap.// -->
+                            </div>
+                        </div> <!-- card-product  end// -->
+                    </div> <!-- col.// -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+                        <div class="card card-product-grid  p-3">
+                            <a href="#" class="img-wrap text-center"> <img
+                                    src="images/items/Dress 2.jpg" class="s"
+                                    alt="Product"> </a>
+                            <div class="info-wrap ">
+                                <p class="title text-truncate fw-bold">Dress</p>
+                                <div class="price mt-1 fw-bold">$118</div>
+                                <!-- price-wrap.// -->
+                            </div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong3">
+                                Buy now
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle3" aria-hidden="true">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content  ">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="card mx-auto text-center" style="width: 18rem;">
+                                                    <div class="text-center">
+                                                        <img src="images/items/Dress 1.jpg" class="s" alt="...">
+                                                    </div>
+                                                    <input type="number" name id class="form-control">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Dress </h5>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- price-wrap.// -->
+                            </div>
+                        </div> <!-- card-product  end// -->
+                    </div> <!-- col.// -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+                        <div class="card card-product-grid  p-3">
+                            <a href="#" class="img-wrap text-center"> <img
+                                    src="images/items/white Dress.jpg" class="s"
+                                    alt="Product"> </a>
+                            <div class="info-wrap ">
+                                <p class="title text-truncate fw-bold">white Dress</p>
+                                <div class="price mt-1 fw-bold">$480</div>
+                                <!-- price-wrap.// -->
+                            </div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong4">
+                                Buy now
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModalLong4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle4" aria-hidden="true">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content  ">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="card mx-auto text-center" style="width: 18rem;">
+                                                    <div class="text-center">
+                                                        <img src="images/items/white Dress.jpg" class="s" alt="...">
+                                                    </div>
+                                                    <input type="number" name id class="form-control">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Dress </h5>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- price-wrap.// -->
+                            </div>
+                        </div> <!-- card-product  end// -->
+                    </div> <!-- col.// -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+                        <div class="card card-product-grid  p-3">
+                            <a href="#" class="img-wrap text-center"> <img
+                                    src="images/items/Party Dress.jpg" class="s"
+                                    alt="Product"> </a>
+                            <div class="info-wrap ">
+                                <p class="title text-truncate fw-bold">Party Dress</p>
+                                <div class="price mt-1 fw-bold">$200</div>
+                                <!-- price-wrap.// -->
+                            </div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong5">
+                                Buy now
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModalLong5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle5" aria-hidden="true">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content  ">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="card mx-auto text-center" style="width: 18rem;">
+                                                    <div class="text-center">
+                                                        <img src="images/items/Party Dress.jpg" class="s" alt="...">
+                                                    </div>
+                                                    <input type="number" name id class="form-control">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Party Dress </h5>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- price-wrap.// -->
+                            </div>
+                        </div> <!-- card-product  end// -->
+                    </div> <!-- col.// -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+                        <div class="card card-product-grid  p-3">
+                            <a href="buy.html" class="img-wrap text-center">
+                                <img
+                                    src="images/items/Party Dress 1.jpg" class="s"
+                                    alt="Product"> </a>
+                            <div class="info-wrap ">
+                                <p class="title text-truncate fw-bold">Kate spade new york</p>
+                                <div class="price mt-1 fw-bold">$278</div>
+                                <!-- price-wrap.// -->
+                            </div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong6">
+                                Buy now
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModalLong6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle6" aria-hidden="true">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content  ">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="card mx-auto text-center" style="width: 18rem;">
+                                                    <div class="text-center">
+                                                        <img src="images/items/Party Dress 1.jpg" class="s" alt="...">
+                                                    </div>
+                                                    <input type="number" name id class="form-control">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Kate spade new york</h5>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- price-wrap.// -->
+                            </div>
+                        </div> <!-- card-product  end// -->
+                    </div> <!-- col.// -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+                        <div class="card card-product-grid  p-3">
+                            <a href="#" class="img-wrap text-center"> <img
+                                    src="images/items/Olivia Rubin.jpg" class="s"
+                                    alt="Product"> </a>
+                            <div class="info-wrap ">
+                                <p class="title text-truncate fw-bold">Olivia Rubin</p>
+                                <div class="price mt-1 fw-bold">$480</div>
+                                <!-- price-wrap.// -->
+                            </div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong7">
+                                Buy now
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModalLong7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle7" aria-hidden="true">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content  ">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="card mx-auto text-center" style="width: 18rem;">
+                                                    <div class="text-center">
+                                                        <img src="images/items/Olivia Rubin.jpg" class="s" alt="...">
+                                                    </div>
+                                                    <input type="number" name id class="form-control">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Olivia Rubin</h5>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- price-wrap.// -->
+                            </div>
+                        </div> <!-- card-product  end// -->
+                    </div> <!-- col.// -->
+                </div> <!-- row.// -->
+                <nav class="float-end mt-4"
+                    aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a
+                                class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link"
+                                href="#">1</a></li>
+                        <li class="page-item"><a class="page-link"
+                                href="#">2</a></li>
+                        <li class="page-item"><a class="page-link"
+                                href="#">3</a></li>
+                        <li class="page-item"><a class="page-link"
+                                href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div><!--  card-body.// -->
+        </div><!--  card.// -->
+        <footer class="text-muted py-5 bg-white">
+            <div class="container">
+                <p>© 2023 Laconic Technology Co., Ltd. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
