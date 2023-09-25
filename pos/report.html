@@ -29,27 +29,32 @@
         <div style="background-color: #bbdefa;" class="shadow">
             <div style="display:flex; justify-content: space-between;">
                 <div class="col-sm-12 col-md-1 pb-4 m-2">
-                    <img class="img-fluid"
-                        src="https://laconic.co.th/wp-content/uploads/2017/04/cropped-logo-e1624865695804.png"
-                        alt>
+                    <a href="pos.html"><img class="img-fluid"
+                            src="https://laconic.co.th/wp-content/uploads/2017/04/cropped-logo-e1624865695804.png"
+                            alt></a>
                 </div>
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link text-dark"
-                            style="color: #616A6B ;" aria-current="page"
-                            href="#">
-                            <i class="fs-5 bi bi-gear-fill m-2"></i>
-                        </a>
+                        <div class="btn-group">
+                            <div type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-gear-fill"></i>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="report.html">Report</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
         <header class="card-header">
-            <div class="row nav justify-content-end">
-                <div class="col-lg-2 col-md-3 col-6 ">
+            <div class="form-group row">
+                <label class="col-sm-1 col-form-label">From Date</label>
+                <div class="col-sm-2">
                     <input type="date" value="02.05.2021" class="form-control">
                 </div>
-                <div class="col-lg-2 col-md-3 col-6 ">
+                <label class="col-sm-1 col-form-label">To Date</label>
+                <div class="col-sm-2">
                     <input type="date" value="02.05.2021" class="form-control">
                 </div>
                 <div class="col-lg-2 col-md-3 col-6">
@@ -59,19 +64,9 @@
                         <option>Show 30</option>
                     </select>
                 </div>
-                <div class="col-md-3 text-end">
-                    <div class="row">
-                        <div class="col-6">
-                            <div>
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="bi bi-printer"></i> Print</button>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div>
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="bi bi-cloud-arrow-down-fill"></i>Export</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-secondary" title="Print"><i class="bi bi-printer"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Export"><i class="bi bi-cloud-arrow-down-fill"></i></button>
                 </div>
             </div>
         </header>
@@ -199,7 +194,7 @@
             <thead>
                 <tr>
                     <th width="5%"></th>
-                    <td width="20%">09/01/2023</td>
+                    <td width="20%">09/02/2023</td>
                     <td width="20%">T-Shirt</td>
                     <td width="20%">$150</td>
                     <td width="20%">10</td>
