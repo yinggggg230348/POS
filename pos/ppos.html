@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Laconic pos</title>
+        <title>POS</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -27,15 +27,22 @@
             <div class="container">
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link text-dark"
-                            style="color: #616A6B ;" aria-current="page"
-                            href="#">
+                        <div class="nav-link text-dark"
+                            style="color: #000000 ;" aria-current="page">
                             <i class="bi bi-bell"></i> Notifications
-                        </a>
+                            <div class="btn-group">
+                                <div type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-gear-fill"></i>
+                                </div>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Add Product</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                 </ul>
                 <div class="row">
-                    <div class="col-sm-12 col-md-1 pb-4">
+                    <div class="col-sm-12 col-md-2 pb-3">
                         <img class="img-fluid"
                             src="https://laconic.co.th/wp-content/uploads/2017/04/cropped-logo-e1624865695804.png"
                             alt>
@@ -53,7 +60,6 @@
                                 <i class="bi bi-cart w-75"></i>
                                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                     3
-                                    <span class="visually-hidden">unread messages</span>
                                 </span>
                             </button>
                         </div>
@@ -174,27 +180,27 @@
                                                                     </td>
                                                                     <td class="text-end"> $480</td>
                                                                 </tr>
-                                                                  <!-- Modal -->
-                                                                  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                                <!-- Modal -->
+                                                                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                                                                     <div class="modal-dialog" role="document">
-                                                                      <div class="modal-content">
-                                                                        <div class="modal-header">
-                                                                          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                            <span aria-hidden="true">&times;</span>
-                                                                          </button>
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                                <h5 class="modal-title" id="exampleModalLongTitle">Product detal</h5>
+                                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="modal-body">
+                                                                                ...
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                                            </div>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                          ...
-                                                                        </div>
-                                                                        <div class="modal-footer">
-                                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                                          <button type="button" class="btn btn-primary">Save changes</button>
-                                                                        </div>
-                                                                      </div>
                                                                     </div>
-                                                                  </div>
-                                                               
+                                                                </div>
+
                                                             </tbody>
                                                         </table>
                                                     </div> <!-- table-responsive// -->
@@ -204,7 +210,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Print</button>
+                                        <button type="button" class="btn btn-primary">Check out</button>
                                     </div>
                                 </div>
                             </div>
@@ -218,24 +224,26 @@
                 <h5 class="card-title"> Products </h5>
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6 pb-3">
-                        <div class="card card-product-grid p-3">
-                            <a href="#" class="img-wrap text-center">
-                                <img src="images/items/T-Shirt.jpg" class="s"
+                        <div class="card card-product-grid  p-3">
+                            <a href="#" class="img-wrapm text-center">
+                                <img
+                                    src="images/items/T-Shirt.jpg"
+                                    class="s "
                                     alt="Product"> </a>
-                            <div class="info-wrap">
-                                <p class="title text-truncate fw-bold">T-Shirt</p>
-                                <div class="price mt-1 fw-bold">$150</div> <!-- price-wrap.// -->
+                            <div class="info-wrap ">
+                                <p class="title text-truncate fw-bold"> T-Shirt</p>
+                                <div class="price mt-1 fw-bold">$150</div>
                             </div>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
                                 Buy now
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade " id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal fade " id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle1" aria-hidden="true">
                                 <div class="modal-dialog " role="document">
                                     <div class="modal-content  ">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Product detal</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -248,17 +256,16 @@
                                                     </div>
                                                     <input type="number" name id class="form-control">
                                                     <div class="card-body">
-                                                        <h5 class="card-title">T-Shirt</h5>
+                                                        <h5 class="card-title"> T-Shirt</h5>
                                                         <div class="price mt-1 fw-bold">$150</div>
                                                         <a href="#" class="btn btn-primary">Add to cart</a>
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
-
+                                <!-- price-wrap.// -->
                             </div>
                         </div> <!-- card-product  end// -->
                     </div> <!-- col.// -->
@@ -282,7 +289,7 @@
                                 <div class="modal-dialog " role="document">
                                     <div class="modal-content  ">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Product detal</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -329,7 +336,7 @@
                                 <div class="modal-dialog " role="document">
                                     <div class="modal-content  ">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Product detal</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -376,7 +383,7 @@
                                 <div class="modal-dialog " role="document">
                                     <div class="modal-content  ">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Product detal</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -423,7 +430,7 @@
                                 <div class="modal-dialog " role="document">
                                     <div class="modal-content  ">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Product detal</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -470,7 +477,7 @@
                                 <div class="modal-dialog " role="document">
                                     <div class="modal-content  ">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Product detal</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -518,7 +525,7 @@
                                 <div class="modal-dialog " role="document">
                                     <div class="modal-content  ">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Product detal</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -565,7 +572,7 @@
                                 <div class="modal-dialog " role="document">
                                     <div class="modal-content  ">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                                            <h5 class="modal-title" id="exampleModalLongTitle1">Product detal</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
