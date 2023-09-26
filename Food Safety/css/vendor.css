@@ -1,3 +1,13 @@
 .bg-backdrop {
     background-color: white;
 }
+
+    .container {
+        border: 1px solid #beaef8; /* เพิ่มเส้นขอบของ container */
+        padding: 10px; /* เพิ่มขอบรอบ container */
+    }
+
+    .bg-light {
+        border: 1px solid #baacfa; /* เพิ่มเส้นขอบของ background */
+        padding: 10px; /* เพิ่มขอบรอบ background */
+    }
