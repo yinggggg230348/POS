@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Laconic pos</title>
+        <link href="css/ui.css?v=1.1" rel="stylesheet" type="text/css" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -22,6 +23,9 @@
         .s{
             width: 150px;
             height: 200px;;
+        }
+        .table thead th{
+            color: black !important;
         }
     </style>
     <body class="bg-light">
@@ -79,175 +83,365 @@
                                                 <th width="20%" class="text-end">Total</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div
-                                                        class="col col-check flex-grow-0 text-center">
+                                        <tr>
+                                            <td>
+                                                <div
+                                                    class="col col-check flex-grow-0 text-center">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="itemside">
+                                                    <div class="left">
+                                                        <img
+                                                            src="images/items/T-Shirt.jpg"
+                                                            width="40"
+                                                            height="50"
+                                                            class="img-xs"
+                                                            alt="Item">
                                                     </div>
-                                                </td>
-                                                <td>
-                                                    <div class="itemside">
-                                                        <div class="left">
-                                                            <img
-                                                                src="images/items/T-Shirt.jpg"
-                                                                width="40"
-                                                                height="50"
-                                                                class="img-xs"
-                                                                alt="Item">
-                                                        </div>
-                                                        <div class="info-wrap">
-                                                            <p class="title">T-Shirt</p></div>
+                                                    <div class="info-wrap">
+                                                        <p class="title">T-Shirt</p>
                                                     </div>
-                                                </td>
-                                                <td> $150 </td>
-                                                <td><i class="bi bi-dash"></i> 1
-                                                    <i class="bi bi-plus"></i>
-                                                    <i class="bi bi-trash-fill float-end "></i></td>
-                                                <td class="text-end"> $150</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div
-                                                        class="col col-check flex-grow-0 text-center">
+                                                </div>
+                                            </td>
+                                            <td> $150 </td>
+                                            <td><i class="bi bi-dash"></i> 1
+                                                <i class="bi bi-plus"></i>
+                                                <i class="bi bi-trash-fill float-end "></i></td>
+                                            <td class="text-end"> $150</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div
+                                                    class="col col-check flex-grow-0 text-center">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="itemside">
+                                                    <div class="left">
+                                                        <img
+                                                            src="images/items/Dress 1.jpg"
+                                                            width="40"
+                                                            height="50"
+                                                            class="img-xs"
+                                                            alt="Item">
                                                     </div>
-                                                </td>
-                                                <td>
-                                                    <div class="itemside">
-                                                        <div class="left">
-                                                            <img
-                                                                src="images/items/Dress 1.jpg"
-                                                                width="40"
-                                                                height="50"
-                                                                class="img-xs"
-                                                                alt="Item">
-                                                        </div>
-                                                        <div class="info-wrap">
-                                                            <p class="title">Dress</p></div>
+                                                    <div class="info-wrap">
+                                                        <p class="title">Dress</p></div>
+                                                </div>
+                                            </td>
+                                            <td> $199</td>
+                                            <td><i class="bi bi-dash"></i> 1
+                                                <i class="bi bi-plus"></i><i
+                                                    class="bi bi-trash-fill float-end "></i></td>
+                                            <td class="text-end"> $199</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div
+                                                    class="col col-check flex-grow-0 text-center">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="itemside">
+                                                    <div class="left">
+                                                        <img
+                                                            src="images/items/Party Dress.jpg"
+                                                            width="40"
+                                                            height="50"
+                                                            class="img-xs"
+                                                            alt="Item">
                                                     </div>
-                                                </td>
-                                                <td> $199</td>
-                                                <td><i class="bi bi-dash"></i> 1
-                                                    <i class="bi bi-plus"></i><i
-                                                        class="bi bi-trash-fill float-end "></i></td>
-                                                <td class="text-end"> $199</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div
-                                                        class="col col-check flex-grow-0 text-center">
+                                                    <div class="info-wrap">
+                                                        <p class="title">Party Dress</p>
                                                     </div>
-                                                </td>
-                                                <td>
-                                                    <div class="itemside">
-                                                        <div class="left">
-                                                            <img
-                                                                src="images/items/Party Dress.jpg"
-                                                                width="40"
-                                                                height="50"
-                                                                class="img-xs"
-                                                                alt="Item">
-                                                        </div>
-                                                        <div class="info-wrap">
-                                                            <p class="title">Party Dress</p></div>
-                                                    </div>
-                                                </td>
-                                                <td> $200</td>
-                                                <td><i class="bi bi-dash"></i> 1
-                                                    <i class="bi bi-plus"></i><i
-                                                        class="bi bi-trash-fill float-end"></i></td>
-                                                <td class="text-end"> $200</td>
-                                            </tr>
-                                            <table class="table table-borderless text-end">
-                                                <thead>
-                                                    <tr>
-                                                        <th width="5%"></th>
-                                                        <th width="70%">Subtotal :</th>
-                                                        <th>$549.00</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th width="5%"></th>
-                                                        <th width="70%">Discount :</th>
-                                                        <th>$00.00</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th width="5%"></th>
-                                                        <th  width="70%" >Tax :</th>
-                                                        <th>$38.29</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th width="5%"></th>
-                                                        <th width="70%">Total :</th>
-                                                        <th>$587.29</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th width="5%"></th>
-                                                        <th width="70%"><i class="bi bi-person-add fs-4"></i>Customer :</th>
-                                                        <th>Alice Delray</th>
-                                                    </tr>
-                                                </thead>
-                                            </table>
-                                                        </div>
-                                                        <button type="button" class="btn btn-dark float-end" data-toggle="modal" data-target="#exampleModal">Check Out</button>
-                                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog" role="document">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header">
-                                                                        <h5 class="modal-title" id="exampleModalLabel">Receipt</h5>
-                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                            <span aria-hidden="true">&times;</span>
-                                                                        </button>
-                                                                    </div>
-                                                                    <div class="modal-body text-center">
-                                                                        <p class="fw-bold fs-5">Laconic Technology Co., Ltd</p>
-                                                                        <p class="fw-bold ">Brief tax invoice</p>
-                                                                        <p class="card-text ">170/44 Ocean Tower1 [14th floor] Rachadaphisek Rd.Klongtoey,Klongtoey,Bangkok 10110.</p>
-                                                                        <p class="fw-bold">Tax ID 0-1055-48144-49-9</p>
-                                                                    </div>
-                                                                    <div class="text-end"> 24/09/2023 12:12PM</div>
-                                                                    <div style="border-top: dashed 2px black;"></div>
-                                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
-                                                                        <p>QTY</p>
-                                                                        <p>Detal</p>
-                                                                        <p>Total</p>
-                                                                    </div>
-                                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
-                                                                        <p>1</p>
-                                                                        <p>T-Shirt</p>
-                                                                        <p>$150</p>
-                                                                    </div>
-                                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
-                                                                        <p>1</p>
-                                                                        <p>Dress</p>
-                                                                        <p> $199</p>
-                                                                    </div>
-                                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
-                                                                        <p>1</p>
-                                                                        <p>Party Dress</p>
-                                                                        <p>$200</p>
-                                                                    </div>
-                                                                    <div style="border-top: dashed 2px black;"></div>
-                                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
-                                                                        <p>Vat</p>
-                                                                        <p>37.8</p>
-                                                                    </div>
-                                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
-                                                                        <p>Total Amount</p>
-                                                                        <p>577.8</p>
-                                                                    </div>
-                                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
-                                                                        <p>Receive cash/change</p>
-                                                                        <p>1,000</p>
-                                                                        <p>422</p>
-                                                                    </div>
-                                                                    <div style="border-top: dashed 2px black;"></div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="bi bi-printer fs-4"></i> Print</button>
+                                                </div>
+                                            </td>
+                                            <td> $200</td>
+                                            <td><i class="bi bi-dash"></i> 1
+                                                <i class="bi bi-plus"></i><i
+                                                    class="bi bi-trash-fill float-end"></i></td>
+                                            <td class="text-end"> $200</td>
+                                        </tr>
+                                        <table class="table table-borderless text-end">
+                                            <thead>
+                                                <tr>
+                                                    <th width="5%"></th>
+                                                    <th width="70%">Subtotal :</th>
+                                                    <th>$549.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th width="5%"></th>
+                                                    <th width="70%">Discount :</th>
+                                                    <th>$00.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th width="5%"></th>
+                                                    <th width="70%">Tax :</th>
+                                                    <th>$38.29</th>
+                                                </tr>
+                                                <tr>
+                                                    <th width="5%"></th>
+                                                    <th width="70%">Total :</th>
+                                                    <th>$587.29</th>
+                                                </tr>
+                                                <tr>
+                                                    <th width="5%"></th>
+                                                    <th width="70%"><i class="bi bi-person-add fs-4" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                                          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                                            <div class="modal-dialog ">
+                                                              <div class="modal-content" style="width: 500px;">
+                                                                <div class="modal-header">
+                                                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Member list</h1>
+                                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="card mb-4">
+                                                                        <div class="card mb-4">
+                                                                            <header class="card-header">
+                                                                                <div class="row gx-3">
+                                                                                    <div class="col-lg-4 col-md-6 me-auto">
+                                                                                        <input type="text" placeholder="Search..." class="form-control">
+                                                                                    </div>
+                                                                                    <div class="col-lg-2 col-md-3 col-6">
+                                                                                        <select class="form-select">
+                                                                                            <option>Show 10</option>
+                                                                                            <option>Show 20</option>
+                                                                                            <option>Show 30</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </header> <!-- card-header end// -->
+                                                                            <div class="overflow-scroll">
+                                                                            <div class="card-body">
+                                                                                <div class="table-responsive">
+                                                                                    <table class="table table-hover">
+                                                                                        <thead>
+                                                                                            <tr>
+                                                                                                <th>Member</th>
+                                                                                                <th>Email</th>
+                                                                                                <th>Status</th>
+                                                                                                <th>Registered</th>
+                                                                                                <th class="text-end"></th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td width="40%">
+                                                                                                    <a href="#" class="itemside">
+                                                                                                        <div class="left">
+                                                                                                            <img src="images/people/avatar1.jpg" class="img-sm img-avatar" alt="Userpic">
+                                                                                                        </div>
+                                                                                                        <div class="info pl-3">
+                                                                                                            <h6 class="mb-0 title">Alice DelRay</h6>
+                                                                                                            <small class="text-muted">Member ID: #439</small>
+                                                                                                        </div>
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                                <td>Alice2Delray@gmail.com</td>
+                                                                                                <td><span class="badge rounded-pill alert-success">Enabled</span></td>
+                                                                                                <td>08.07.2020</td>
+                                                                                                <td class="text-end">
+                                                                                                    <a href="Viw-member.html" class="btn btn-light">Confirm</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td width="40%">
+                                                                                                    <a href="#" class="itemside">
+                                                                                                        <div class="left">
+                                                                                                            <img src="images/people/avatar2.jpg" class="img-sm img-avatar" alt="Userpic">
+                                                                                                        </div>
+                                                                                                        <div class="info pl-3">
+                                                                                                            <h6 class="mb-0 title">Mary Monasa</h6>
+                                                                                                            <small class="text-muted">Member ID: #129</small>
+                                                                                                        </div>
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                                <td>monalisa@example.com</td>
+                                                                                                <td><span class="badge rounded-pill alert-success">Enabled</span></td>
+                                                                                                <td>11.07.2020</td>
+                                                                                                <td class="text-end">
+                                                                                                    <a href="#" class="btn btn-light">Confirm</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td width="40%">
+                                                                                                    <a href="#" class="itemside">
+                                                                                                        <div class="left">
+                                                                                                            <img src="images/people/avatar3.jpg" class="img-sm img-avatar" alt="Userpic">
+                                                                                                        </div>
+                                                                                                        <div class="info pl-3">
+                                                                                                            <h6 class="mb-0 title">Jonatan Ive</h6>
+                                                                                                            <small class="text-muted">Member ID: #400</small>
+                                                                                                        </div>
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                                <td>mrjohn@example.com</td>
+                                                                                                <td><span class="badge rounded-pill alert-success">Enabled</span></td>
+                                                                                                <td>08.07.2020</td>
+                                                                                                <td class="text-end">
+                                                                                                    <a href="#" class="btn btn-light">Confirm</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td width="40%">
+                                                                                                    <a href="#" class="itemside">
+                                                                                                        <div class="left">
+                                                                                                            <img src="images/people/avatar1.jpg" class="img-sm img-avatar" alt="Userpic">
+                                                                                                        </div>
+                                                                                                        <div class="info pl-3">
+                                                                                                            <h6 class="mb-0 title">Albert Pushkin</h6>
+                                                                                                            <small class="text-muted">Member ID: #439</small>
+                                                                                                        </div>
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                                <td>someone@mymail.com</td>
+                                                                                                <td><span class="badge rounded-pill alert-success">Enabled</span></td>
+                                                                                                <td>20.11.2019</td>
+                                                                                                <td class="text-end">
+                                                                                                    <a href="#" class="btn btn-light">Confirm</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td width="40%">
+                                                                                                    <a href="#" class="itemside">
+                                                                                                        <div class="left">
+                                                                                                            <img src="images/people/avatar4.jpg" class="img-sm img-avatar" alt="Userpic">
+                                                                                                        </div>
+                                                                                                        <div class="info pl-3">
+                                                                                                            <h6 class="mb-0 title">Alex Pushkina</h6>
+                                                                                                            <small class="text-muted">Member ID: #439</small>
+                                                                                                        </div>
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                                <td>alex@gmail.org</td>
+                                                                                                <td><span class="badge rounded-pill alert-success">Enabled</span></td>
+                                                                                                <td>08.07.2020</td>
+                                                                                                <td class="text-end">
+                                                                                                    <a href="#" class="btn btn-light">Confirm</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td width="40%">
+                                                                                                    <a href="#" class="itemside">
+                                                                                                        <div class="left">
+                                                                                                            <img src="images/people/avatar1.jpg" class="img-sm img-avatar" alt="Userpic">
+                                                                                                        </div>
+                                                                                                        <div class="info pl-3">
+                                                                                                            <h6 class="mb-0 title">Eleanor Pena</h6>
+                                                                                                            <small class="text-muted">Member ID: #439</small>
+                                                                                                        </div>
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                                <td>eleanor2020@example.com</td>
+                                                                                                <td><span class="badge rounded-pill alert-success">Enabled</span></td>
+                                                                                                <td>08.07.2020</td>
+                                                                                                <td class="text-end">
+                                                                                                    <a href="#" class="btn btn-light">Confirm</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td width="40%">
+                                                                                                    <a href="#" class="itemside">
+                                                                                                        <div class="left">
+                                                                                                            <img src="images/people/avatar2.jpg" class="img-sm img-avatar" alt="Userpic">
+                                                                                                        </div>
+                                                                                                        <div class="info pl-3">
+                                                                                                            <h6 class="mb-0 title">Eleanor Pena</h6>
+                                                                                                            <small class="text-muted">Member ID: #439</small>
+                                                                                                        </div>
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                                <td>eleanor2020@example.com</td>
+                                                                                                <td><span class="badge rounded-pill alert-success">Enabled</span></td>
+                                                                                                <td>08.07.2020</td>
+                                                                                                <td class="text-end">
+                                                                                                    <a href="#" class="btn btn-light">Confirm</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table> <!-- table-responsive.// -->
+                                                                                </div>
+                                                                            </div> <!-- card-body end// -->
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
+                                                                <div class="modal-footer">
+                                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                                </div>
+                                                              </div>
                                                             </div>
-                                                        </div>
-                                        </tbody>
+                                                          </div>
+                                                    </i>Customer :</th>
+                                                    <th>Alice Delray</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                        <button type="button" class="btn btn-dark float-end" data-toggle="modal" data-target="#exampleModal">Check Out</button>
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Receipt</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-center">
+                                                        <p class="fw-bold fs-5">Laconic Technology Co., Ltd</p>
+                                                        <p class="fw-bold ">Brief tax invoice</p>
+                                                        <p class="card-text ">170/44 Ocean Tower1 [14th floor] Rachadaphisek Rd.Klongtoey,Klongtoey,Bangkok 10110.</p>
+                                                        <p class="fw-bold">Tax ID 0-1055-48144-49-9</p>
+                                                    </div>
+                                                    <div class="text-end"> 24/09/2023 12:12PM</div>
+                                                    <div style="border-top: dashed 2px black;"></div>
+                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
+                                                        <p>QTY</p>
+                                                        <p>Detal</p>
+                                                        <p>Total</p>
+                                                    </div>
+                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
+                                                        <p>1</p>
+                                                        <p>T-Shirt</p>
+                                                        <p>$150</p>
+                                                    </div>
+                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
+                                                        <p>1</p>
+                                                        <p>Dress</p>
+                                                        <p> $199</p>
+                                                    </div>
+                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
+                                                        <p>1</p>
+                                                        <p>Party Dress</p>
+                                                        <p>$200</p>
+                                                    </div>
+                                                    <div style="border-top: dashed 2px black;"></div>
+                                                    <div style="display:flex; justify-content: space-between; margin: 5px;">
+                                                        <p>Total </p>
+                                                        <p>$549.00</p>
+                                                    </div>
+                                                    <div style="display:flex; justify-content: space-between; margin: 5px;">
+                                                        <p>Vat</p>
+                                                        <p>37.8</p>
+                                                    </div>
+                                                    <div style="display:flex; justify-content: space-between; margin: 5px;">
+                                                        <p>Total Amount</p>
+                                                        <p>577.8</p>
+                                                    </div>
+                                                    <div style="display:flex; justify-content: space-between; margin: 5px;">
+                                                        <p>Receive cash/change</p>
+                                                        <p>1,000</p>
+                                                        <p>422</p>
+                                                    </div>
+                                                    <div style="border-top: dashed 2px black;"></div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="bi bi-printer fs-4"></i> Print</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </table>
                                 </div> <!-- table-responsive// -->
                             </div> <!-- col// -->
@@ -255,14 +449,13 @@
                     </div> <!-- card-body end// -->
                 </div>
             </div>
-        </div>
-        <footer class="text-muted py-5 bg-white">
-            <div class="container">
-                <p>© 2023 Laconic Technology Co., Ltd. All Rights Reserved.</p>
-            </div>
-        </footer>
-    </body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</html>
+            <footer class="text-muted py-5 bg-white">
+                <div class="container">
+                    <p>© 2023 Laconic Technology Co., Ltd. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </html>
