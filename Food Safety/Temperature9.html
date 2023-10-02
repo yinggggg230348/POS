@@ -14,7 +14,13 @@
         integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <style> 
         body {
             margin: 0;
             /* เอา margin ออก */
@@ -65,50 +71,42 @@
                 <div class="container">
                     <div class="bg-backdrop py-5">
                         <div class="mt-2 m-4" style="display:flex; ">
-                            <img src="assets/food/3.png" width="100px" alt="">
                             <h2 class="mt-4 m-3 text-light">RAW MATERIAL TEMPERATURE MEASREMENT</h2>
                         </div>
                         <div class="bg-light m-4 p-4 h-auto mt-2">
-                            <div class="row">
-                                <div class="col-6 fw-bold">
-                                    <p>Date: 12 June 2023</p>
+                            <div class="row px-3 mb-3">
+                                <div class="col-sm-12 col-md-3">
+                                    <img src="assets/food/pick.jpg" class="img-fluid" alt="">
                                 </div>
-                                <div class="col-6 text-end fw-bold">
-                                    <p>Time: 12.00 PM</p>
-                                </div>
-                                <hr>
-                            </div>
-                            <div class="row">
-                                <div class="col-2">
-                                    <h4 class="mt-4">Food Item : </h4>
-                                </div>
-                                <div class="col-10">
-                                    <a href="Temperature1.1.html"><i class="bi bi-search float-end fs-3"></i></a>
-                                    <hr class="mt-5 colored-hr ">
+                                <div class="col-sm-12 col-md-9 mt-3">
+                                    <h4>RM : Pork</h4>
+                                    <h4>Type : Frozen</h4>
+                                    <h4>Details : Fresh Pork size 1 kg.</h4>
                                 </div>
                             </div>
-                            <div class="overflow-scroll">
-                                <table class="table table-bordered bg-primary-light border-dark text-center">
-                                    <thead>
-                                        <tr>
-                                            <th class="fw-bold ">PO No.</th>
-                                            <th class="fw-bold">Supplier</th>
-                                            <th class="fw-bold">Food Item</th>
-                                            <th class="fw-bold">Temp ◦C</th>
-                                            <th class="fw-bold">Package Standard</th>
-                                            <th class="fw-bold">Status</th>
-                                            <th class="fw-bold">Corrective action</th>
-                                            <th class="fw-bold">Action</th>
-                                        </tr>
-                                    </thead>
-                                </table>
+                            <div class="row px-3 mb-3">
+                                <div class="col-12">
+                                    <h4>Temp Standards : ≤ 7◦C</h4>
+                                    <h4 class="mt-5">15 ◦C</h4>
+                                    <i class="bi bi-check-circle-fill text-success fs-3 me-5"></i>
+                                    <i class="bi bi-x-circle-fill text-danger fs-3"></i>
+                                </div>
                             </div>
-                            <div style="padding-top: 240px;">
-                                <label class="form-label fw-bold h4">Signature :</label>
-                                <textarea name="" id="" cols="30" rows="10" class="form-control"
-                                    placeholder="Your signature "></textarea>
-                                <div class="d-flex align-items-end justify-content-end">
-                                    <button type="button" class="btn btn-primary mt-2">Save</button>
+                            <div class="row px-3 mb-3">
+                                <div class="col-12">
+                                    <h4>Packaging Standards :</h4>
+                                    <i class="bi bi-check-circle-fill text-success fs-3 me-5"></i>
+                                    <i class="bi bi-x-circle-fill text-danger fs-3"></i>
+                                </div>
+                            </div>
+                            <div class="row px-3 mb-3">
+                                <div class="col-12">
+                                    <label class="form-label fw-bold h4 mb-3">Corrective Action :</label>
+                                    <textarea name="" id="" rows="10" class="form-control" placeholder="Your signature">
+                                    </textarea>
+                                    <div class="d-flex align-items-end justify-content-end">
+                                        <button type="button" class="btn btn-primary mt-2">Reject</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
