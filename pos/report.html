@@ -1,6 +1,14 @@
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Report</title>
+        <link href="css/ui.css?v=1.1" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+            integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/bootstrap.css">
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -10,217 +18,209 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-            integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/bootstrap.css">
-        <link rel="stylesheet" href="fonts/material-icon/css/round.css" />
-        <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
     </head>
-    <style>
-        .s{
-            width: 150px;
-            height: 200px;;
-        }
-    </style>
-
-<body class="bg-light">
-    <div style="background-color: #bbdefa;" class="shadow">
-        <div style="display:flex; justify-content: space-between;">
-            <div class="col-sm-12 col-md-1 pb-4 m-2">
-                <a href="pos.html"><img class="img-fluid"
-                    src="https://laconic.co.th/wp-content/uploads/2017/04/cropped-logo-e1624865695804.png"
-                    alt></a>
-            </div>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <div class="nav-link text-dark"
-                        style="color: #0a0b0b ;" aria-current="page">
-                        <i class="bi bi-bell"></i> Notifications
-                        <div class="btn-group">
-                            <div type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-gear-fill fs-5"></i>
+    <body class="bg-light ">
+        <div style="background-color: #bbdefa;" class="shadow">
+            <div style="display:flex; justify-content: space-between;">
+                <div class="col-sm-12 col-md-1 pb-4 m-2">
+                    <a href="pos.html"><img class="img-fluid"
+                            src="https://laconic.co.th/wp-content/uploads/2017/04/cropped-logo-e1624865695804.png"
+                            alt></a>
+                </div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <div class="nav-link text-dark"
+                            style="color: #0a0b0b ;" aria-current="page">
+                            <i class="bi bi-bell"></i> Notifications
+                            <div class="btn-group">
+                                <div type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-gear-fill fs-5"></i>
+                                </div>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="report.html">Report</a></li>
+                                    <li><a class="dropdown-item" href="Member-list.html">Member</a></li>
+                                    <li><a class="dropdown-item" href="products-list.html">Product</a></li>
+                                </ul>
                             </div>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="report.html">Report</a></li>
-                                <li><a class="dropdown-item" href="Member-list.html">Member</a></li>
-                                <li><a class="dropdown-item" href="products-list.html ">Product</a></li>
-                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="content-main">
+            <div class="content-header">
+                <div class="container">
+                <header class="card-header">
+                    <div class="form-group row">
+                        <label class="col-sm-1 col-form-label">From Date</label>
+                        <div class="col-sm-2">
+                            <input type="date" value="02.05.2021" class="form-control">
+                        </div>
+                        <label class="col-sm-1 col-form-label">To Date</label>
+                        <div class="col-sm-2">
+                            <input type="date" value="02.05.2021" class="form-control">
+                        </div>
+                        <div class="col-sm-2">
+                            <button type="button" class="btn btn-secondary">Search</button>
+                        </div>
+                        <div class="col-md-2 text-end">
+                            <button type="button" class="btn btn-secondary" title="Print"><i class="bi bi-printer"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Export"><i class="bi bi-cloud-arrow-down-fill"></i></button>
+                        </div>
+                        <div class="col-2 text-end">
+                            <select class="form-select">
+                                <option>Show 10</option>
+                                <option>Show 20</option>
+                                <option>Show 30</option>
+                            </select>
                         </div>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-        <header class="card-header">
-            <div class="form-group row">
-                <label class="col-sm-1 col-form-label">From Date</label>
-                <div class="col-sm-2">
-                    <input type="date" value="02.05.2021" class="form-control">
-                </div>
-                <label class="col-sm-1 col-form-label">To Date</label>
-                <div class="col-sm-2">
-                    <input type="date" value="02.05.2021" class="form-control">
-                </div>
-                <div class="col-sm-2">
-                    <button type="button" class="btn btn-secondary">Search</button>
-                </div>
-                <div class="col-md-2 text-end">
-                    <button type="button" class="btn btn-secondary" title="Print"><i class="bi bi-printer"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Export"><i class="bi bi-cloud-arrow-down-fill"></i></button>
-                </div>
-                <div class="col-2 text-end">
-                    <select class="form-select">
-                        <option>Show 10</option>
-                        <option>Show 20</option>
-                        <option>Show 30</option>
-                    </select>
+                    <hr>
+                </header>
+                    <table class="table table-hover table-lg mt-2">
+                        <thead>
+                            <tr>
+                                <th width="5%"></th>
+                                <th width="20%">Date</th>
+                                <th width="20%">Product</th>
+                                <th width="20%">Unit Price</th>
+                                <th width="20%">Quantity</th>
+                                <th width="20%">Total Amount</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="table table-hover table-lg mt-2">
+                        <thead>
+                            <tr>
+                                <th width="5%"></th>
+                                <td width="20%">09/01/2023</td>
+                                <td width="20%">T-Shirt</td>
+                                <td width="20%">$150</td>
+                                <td width="20%">10</td>
+                                <td width="20%">$1500</td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="table table-hover table-lg mt-2">
+                        <thead>
+                            <tr>
+                                <th width="5%"></th>
+                                <td width="20%">09/01/2023</td>
+                                <td width="20%">Dress</td>
+                                <td width="20%">$199</td>
+                                <td width="20%">10</td>
+                                <td width="20%">$1990</td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="table table-hover table-lg mt-2">
+                        <thead>
+                            <tr>
+                                <th width="5%"></th>
+                                <td width="20%">09/01/2023</td>
+                                <td width="20%">Party Dress</td>
+                                <td width="20%">$200</td>
+                                <td width="20%">5</td>
+                                <td width="20%">$2000</td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="table table-hover table-lg mt-2">
+                        <thead>
+                            <tr>
+                                <th width="5%"></th>
+                                <td width="20%">09/01/2023</td>
+                                <td width="20%">Off shoulder shirt</td>
+                                <td width="20%">$142</td>
+                                <td width="20%">10</td>
+                                <td width="20%">$1420</td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="table table-hover table-lg mt-2">
+                        <thead>
+                            <tr>
+                                <th width="5%"></th>
+                                <td width="20%">09/01/2023</td>
+                                <td width="20%">Kate spade new york</td>
+                                <td width="20%">$278</td>
+                                <td width="20%">10</td>
+                                <td width="20%">$2780</td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="table table-hover table-lg mt-2">
+                        <thead>
+                            <tr>
+                                <th width="5%"></th>
+                                <td width="20%">09/01/2023</td>
+                                <td width="20%">white Dress</td>
+                                <td width="20%">$480</td>
+                                <td width="20%">10</td>
+                                <td width="20%">$4800</td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="table table-hover table-lg mt-2">
+                        <thead>
+                            <tr>
+                                <th width="5%"></th>
+                                <td width="20%">09/01/2023</td>
+                                <td width="20%">Dress</td>
+                                <td width="20%">$118</td>
+                                <td width="20%">10</td>
+                                <td width="20%">$1180</td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="table table-hover table-lg mt-2">
+                        <thead>
+                            <tr>
+                                <th width="5%"></th>
+                                <td width="20%">09/02/2023</td>
+                                <td width="20%">Kate spade new york</td>
+                                <td width="20%">$278</td>
+                                <td width="20%">10</td>
+                                <td width="20%">$2780</td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="table table-hover table-lg mt-2">
+                        <thead>
+                            <tr>
+                                <th width="5%"></th>
+                                <td width="20%">09/02/2023</td>
+                                <td width="20%">Off shoulder shirt</td>
+                                <td width="20%">$142</td>
+                                <td width="20%">10</td>
+                                <td width="20%">$1420</td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="table table-hover table-lg mt-2">
+                        <thead>
+                            <tr>
+                                <th width="5%"></th>
+                                <td width="20%">09/02/2023</td>
+                                <td width="20%">T-Shirt</td>
+                                <td width="20%">$150</td>
+                                <td width="20%">10</td>
+                                <td width="20%">$1500</td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="table table-hover table-lg mt-2 bg-primary-light">
+                        <thead>
+                            <tr>
+                                <th width="5%"></th>
+                                <th>Total Amount :</th>
+                                <th width="20%">95</th>
+                                <th width="15%">$12,610</th>
+                            </tr>
+                        </thead>
+                    </table>
                 </div>
             </div>
-            <hr>
-        </header>
-        <table class="table table-hover table-lg mt-2">
-            <thead>
-                <tr>
-                    <th width="5%"></th>
-                    <th width="20%">Date</th>
-                    <th width="20%">Product</th>
-                    <th width="20%">Unit Price</th>
-                    <th width="20%">Quantity</th>
-                    <th width="20%">Total Amount</th>
-                </tr>
-            </thead>
-        </table>
-        <table class="table table-hover table-lg mt-2">
-            <thead>
-                <tr>
-                    <th width="5%"></th>
-                    <td width="20%">09/01/2023</td>
-                    <td width="20%">T-Shirt</td>
-                    <td width="20%">$150</td>
-                    <td width="20%">10</td>
-                    <td width="20%">$1500</td>
-                </tr>
-            </thead>
-        </table>
-        <table class="table table-hover table-lg mt-2">
-            <thead>
-                <tr>
-                    <th width="5%"></th>
-                    <td width="20%">09/01/2023</td>
-                    <td width="20%">Dress</td>
-                    <td width="20%">$199</td>
-                    <td width="20%">10</td>
-                    <td width="20%">$1990</td>
-                </tr>
-            </thead>
-        </table>
-        <table class="table table-hover table-lg mt-2">
-            <thead>
-                <tr>
-                    <th width="5%"></th>
-                    <td width="20%">09/01/2023</td>
-                    <td width="20%">Party Dress</td>
-                    <td width="20%">$200</td>
-                    <td width="20%">5</td>
-                    <td width="20%">$2000</td>
-                </tr>
-            </thead>
-        </table>
-        <table class="table table-hover table-lg mt-2">
-            <thead>
-                <tr>
-                    <th width="5%"></th>
-                    <td width="20%">09/01/2023</td>
-                    <td width="20%">Off shoulder shirt</td>
-                    <td width="20%">$142</td>
-                    <td width="20%">10</td>
-                    <td width="20%">$1420</td>
-                </tr>
-            </thead>
-        </table>
-        <table class="table table-hover table-lg mt-2">
-            <thead>
-                <tr>
-                    <th width="5%"></th>
-                    <td width="20%">09/01/2023</td>
-                    <td width="20%">Kate spade new york</td>
-                    <td width="20%">$278</td>
-                    <td width="20%">10</td>
-                    <td width="20%">$2780</td>
-                </tr>
-            </thead>
-        </table>
-        <table class="table table-hover table-lg mt-2">
-            <thead>
-                <tr>
-                    <th width="5%"></th>
-                    <td width="20%">09/01/2023</td>
-                    <td width="20%">white Dress</td>
-                    <td width="20%">$480</td>
-                    <td width="20%">10</td>
-                    <td width="20%">$4800</td>
-                </tr>
-            </thead>
-        </table>
-        <table class="table table-hover table-lg mt-2">
-            <thead>
-                <tr>
-                    <th width="5%"></th>
-                    <td width="20%">09/01/2023</td>
-                    <td width="20%">Dress</td>
-                    <td width="20%">$118</td>
-                    <td width="20%">10</td>
-                    <td width="20%">$1180</td>
-                </tr>
-            </thead>
-        </table>
-        <table class="table table-hover table-lg mt-2">
-            <thead>
-                <tr>
-                    <th width="5%"></th>
-                    <td width="20%">09/02/2023</td>
-                    <td width="20%">Kate spade new york</td>
-                    <td width="20%">$278</td>
-                    <td width="20%">10</td>
-                    <td width="20%">$2780</td>
-                </tr>
-            </thead>
-        </table>
-        <table class="table table-hover table-lg mt-2">
-            <thead>
-                <tr>
-                    <th width="5%"></th>
-                    <td width="20%">09/02/2023</td>
-                    <td width="20%">Off shoulder shirt</td>
-                    <td width="20%">$142</td>
-                    <td width="20%">10</td>
-                    <td width="20%">$1420</td>
-                </tr>
-            </thead>
-        </table>
-        <table class="table table-hover table-lg mt-2">
-            <thead>
-                <tr>
-                    <th width="5%"></th>
-                    <td width="20%">09/02/2023</td>
-                    <td width="20%">T-Shirt</td>
-                    <td width="20%">$150</td>
-                    <td width="20%">10</td>
-                    <td width="20%">$1500</td>
-                </tr>
-            </thead>
-        </table>
-        <table class="table table-hover table-lg mt-2 bg-primary-light">
-            <thead>
-                <tr>
-                    <th width="5%"></th>
-                    <th>Total Amount :</th>
-                    <th width="20%">95</th>
-                    <th width="15%">$12,610</th>
-                </tr>
-            </thead>
-        </table>
+        </section>
     </body>
 </html>
