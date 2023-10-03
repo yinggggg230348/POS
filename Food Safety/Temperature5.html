@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Temperature11</title>
+    <title>Temperature5</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
         integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
     <style>
         body {
             margin: 0;
@@ -64,39 +71,33 @@
                 <div class="container">
                     <div class="bg-backdrop py-5">
                         <div class="mt-2 m-4" style="display:flex; ">
-                            <img class="mt-4" src="assets/food/Home.png" width="100px" height="100px" alt="">
-                            <h1 class="mt-4 m-3 text-light">Ambient Storage Temperature & Relative Humidity</h1>
+                            <h2 class="mt-4 m-3 text-light">RAW MATERIAL TEMPERATURE MEASREMENT</h2>
                         </div>
                         <div class="bg-light m-4 p-4 h-auto mt-2">
                             <div class="row">
-                                <div class="col-6 fw-bold">
-                                    <p>Date: 12 June 2023</p>
+                                <div class="col-3">
+                                    <img src="assets/food/pick.jpg"class="img-fluid" alt="">
                                 </div>
-                                <div class="col-6 text-end fw-bold">
-                                    <p>Time: 12.00 PM</p>
+                                <div class="col-6 mt-3">
+                                    <h4>RM : Pork</h4>
+                                    <h4>Type : Frozen</h4>
+                                    <h4>Details : Fresh Pork size 1 kg.</h4>
                                 </div>
-                                <hr>
-                            </div>
-                            <div class="fw-bold mt-3">
-                                <h5>Location : </h5>
-                            </div>
-                            <select class="form-select" aria-label="Default select example">
-                                <option disabled selected>-- Select --</option>
-                                <option value="1">Location 1</option>
-                                <option value="2">Location 2</option>
-                                <option value="3">Location 3</option>
-                            </select>
-                            <div>
-                                <h5 class="mt-5">Temperature ≤ 21 °C :</h5>
-                                <h5 class="mt-5"> 24°C </h5>
-                                <h5 class="mt-5">Relative Humidity < 65% :</h5>
-                            </div>
-                            <div style="padding-top: 175px;">
-                                <label class="form-label fw-bold h4">Comments/Corrective Actions :</label>
-                                <textarea name="" id="" cols="30" rows="10" class="form-control"
-                                    placeholder="Details"></textarea>
-                                <div class="d-flex align-items-end justify-content-end">
-                                    <button type="button" class="btn btn-primary mt-2">Save</button>
+                                <div class="mt-5 m-5">
+                                    <h4>Temp Standards : ≤ 7◦C</h4>
+                                    <h4 class="mt-5  ">15 ◦C</h4>
+                                    <i class="bi bi-check-circle-fill text-success fs-3 me-5"></i>
+                                    <i class="bi bi-x-circle-fill text-danger fs-3  "></i>
+                                </div>
+                                <div class="mt-3 m-5">
+                                    <h4>Packaging Standards :</h4>
+                                    <a href="Temperature4.html"><i class="bi bi-check-circle-fill text-success fs-3 me-5"></i></a>
+                                    <a href="Temperature4.html"><i class="bi bi-x-circle-fill text-danger fs-3  "></i></a>
+                                </div>
+                                <div style="padding-top: 175px;">
+                                    <div class="d-flex align-items-end justify-content-end">
+                                        <button type="button" class="btn btn-primary mt-2">Reject</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -123,11 +124,6 @@
         </div>
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
 
 </html>
+               
