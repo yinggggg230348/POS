@@ -71,7 +71,7 @@
             <a class="menu-link" href="brands.html"> <i class="icon material-icons md-stars"></i> <span class="text">Brands</span> </a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="Refund.html"> <i class="icon material-icons md-monetization_on"></i> <span class="text">Refund</span> </a> 
+            <a class="menu-link" href="Refund.html"> <i class="icon material-icons md-monetization_on"></i> <span class="text">Refund</span> </a>
           </li>
         </ul>
         <hr>
@@ -92,175 +92,180 @@
           </form>
         </div>
       </header>
-      <section class="content-main" style="max-width:920px">
-        <div class="content-header">
-          <h2 class="content-title">Add product</h2>
-        </div>
-        <div class="card mb-4">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-4">
-                <h6>1. General info</h6>
-              </div>
-              <div class="col-md-8">
-                <div class="mb-4">
-                  <label class="form-label">Product title</label>
-                  <input type="text" placeholder="Type here" class="form-control">
-                </div>
-                <div class="mb-4">
-                  <label class="form-label">Description</label>
-                  <textarea placeholder="Type here" class="form-control" rows="4"></textarea>
-                </div>
-                <div class="mb-4" style="max-width:250px;">
-                  <label class="form-label">Brand name</label>
-                  <select class="form-select">
-                    <option> Adidas </option>
-                    <option> Nike </option>
-                    <option> Puma </option>
-                  </select>
-                </div>
-              </div> <!-- col.// -->
-            </div> <!-- row.// -->
-
-            <hr class="mb-4 mt-0">
-
-            <div class="row">
-              <div class="col-md-4">
-                <h6>2. Pricing</h6>
-              </div>
-              <div class="col-md-8">
+      <section class="content-main">
+        <div class="modal-body">
+          <section class="content-main" style="max-width:920px">
+            <h2 class="content-title">Add Product</h2>
+            <div class="card  ">
+              <dsiv class="card-body ">
                 <div class="row">
-                  <div class="col-3">
-                    <div class="mb-4" style="max-width:250px;">
-                      <label class="form-label">Sales Price</label>
-                      <input type="text" placeholder="00.0" class="form-control">
-                    </div>
+                  <div class="col-md-4">
+                    <h6>1. General info</h6>
                   </div>
-                  <div class="col-3">
-                    <div class="mb-4" style="max-width:250px;">
-                      <label class="form-label">Cost</label>
-                      <input type="text" placeholder="00.0" class="form-control">
+                  <div class="col-md-12">
+                    <div class="mb-2 text-start">
+                      <label class="form-label ">Product title</label>
+                      <input type="text" placeholder="Type here" class="form-control">
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="mb-4" style="max-width:250px;">
-                      <label class="form-label">Currency</label>
-                      <input type="text" placeholder="00.0" class="form-control">
+                    <div class="mb-4 text-start">
+                      <label class="form-label">Description</label>
+                      <textarea placeholder="Type here" class="form-control" rows="4"></textarea>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="mb-4" style="max-width:250px;">
-                    </div>
-                    <div class="dropdown">
-                      <div class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        USD
-                      </div>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">THD</a></li>
-                        <li><a class="dropdown-item" href="#">TWD</a></li>
-                        <li><a class="dropdown-item" href="#">SGD</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="mb-4 ">
-                    <label class="mb-2 form-check form-check-inline" style="width: 45%;">
+                    <p class="text-start ">Size</p>
+                    <label class="form-check form-check-inline text-start">
                       <input class="form-check-input" checked name="mycategory" type="checkbox">
-                      <span class="form-check-label"> Oversell </span>
+                      <span class="form-check-label"> S </span>
+                    </label> <label class="form-check form-check-inline text-start">
+                      <input class="form-check-input" checked name="mycategory" type="checkbox">
+                      <span class="form-check-label"> M </span>
+                    </label> <label class="form-check form-check-inline text-start">
+                      <input class="form-check-input" checked name="mycategory" type="checkbox">
+                      <span class="form-check-label"> L </span>
+                    </label> <label class="form-check form-check-inline text-start">
+                      <input class="form-check-input" checked name="mycategory" type="checkbox">
+                      <span class="form-check-label"> XL </span>
+                    </label>
+                  </div> <!-- col.// -->
+                </div> <!-- row.// -->
+                <hr class="mb-4 mt-2">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6>2. Pricing</h6>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-3">
+                        <div class="mb-4" style="max-width:250px;">
+                          <label class="form-label ">Sales Price</label>
+                          <input type="text" placeholder="00.0" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="mb-4" style="max-width:250px;">
+                          <label class="form-label ">Cost</label>
+                          <input type="text" placeholder="00.0" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-3 mt-4">
+                        <select class="form-select">
+                          <option>THB</option>
+                          <option>USD</option>
+                          <option>TWD</option>
+                        </select>
+                      </div>
+                      <div class="col-3">
+                        <div class="mb-4" style="max-width:250px;">
+                          <label class="form-label ">Currency</label>
+                          <input type="text" placeholder="00.0" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <label class="form-check form-check-inline text-start" style="width: 45%;">
+                      <input class="form-check-input" checked name="mycategory" type="checkbox">
+                      <span class="form-check-label"> Over Delivery </span>
+                    </label>
+                    <label class="form-check form-check-inline text-start" style="width: 45%;">
+                      <input class="form-check-input" checked name="mycategory" type="checkbox">
+                      <span class="form-check-label"> Pre-order </span>
                     </label>
                   </div>
+                </div> <!-- col.// -->
+                <hr class="mb-4 mt-2">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6>3. Category</h6>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-4">
+                      <label class="mb-2 form-check form-check-inline text-start" style="width: 45%;">
+                        <input class="form-check-input" checked name="mycategory" type="radio">
+                        <span class="form-check-label"> Clothes </span>
+                      </label>
+                      <label class="mb-2 form-check form-check-inline text-start" style="width: 45%;">
+                        <input class="form-check-input" name="mycategory" type="radio">
+                        <span class="form-check-label"> Electronics </span>
+                      </label>
+                      <label class="mb-2 form-check form-check-inline text-start" style="width: 45%;">
+                        <input class="form-check-input" name="mycategory" type="radio">
+                        <span class="form-check-label"> Sports </span>
+                      </label>
+                      <label class="mb-2 form-check form-check-inline text-start" style="width: 45%;">
+                        <input class="form-check-input" name="mycategory" type="radio">
+                        <span class="form-check-label"> Automobiles </span>
+                      </label>
+                      <label class="mb-2 form-check form-check-inline text-start" style="width: 45%;">
+                        <input class="form-check-input" name="mycategory" type="radio">
+                        <span class="form-check-label"> Home interior </span>
+                      </label>
+                      <label class="mb-2 form-check form-check-inline text-start" style="width: 45%;">
+                        <input class="form-check-input" name="mycategory" type="radio">
+                        <span class="form-check-label"> Smartphones </span>
+                      </label>
+                      <label class="mb-2 form-check form-check-inline text-start" style="width: 45%;">
+                        <input class="form-check-input" name="mycategory" type="radio">
+                        <span class="form-check-label"> Books </span>
+                      </label>
+                      <label class="mb-2 form-check form-check-inline text-start" style="width: 45%;">
+                        <input class="form-check-input" name="mycategory" type="radio">
+                        <span class="form-check-label"> Kids item </span>
+                      </label>
+                      <label class="mb-2 form-check form-check-inline text-start" style="width: 100%;">
+                        <input class="form-check-input" name="mycategory" type="radio">
+                        <span class="form-check-label"> Others </span>
+                      </label>
+                    </div>
+                  </div> <!-- col.// -->
+                </div> <!-- row.// -->
+                <hr class="mb-4 mt-2">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6>4. Media</h6>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-4 text-start">
+                      <label class="form-label">Images</label>
+                      <input class="form-control" type="file">
+                    </div>
+                  </div> <!-- col.// -->
                 </div>
-              </div> <!-- col.// -->
-            </div> <!-- row.// -->
-
-            <hr class="mb-4 mt-0">
-
-            <div class="row">
-              <div class="col-md-4">
-                <h6>3. Category</h6>
-              </div>
-              <div class="col-md-8">
-                <div class="mb-4">
-                  <label class="mb-2 form-check form-check-inline" style="width: 45%;">
-                    <input class="form-check-input" checked name="mycategory" type="radio">
-                    <span class="form-check-label"> Clothes </span>
-                  </label>
-                  <label class="mb-2 form-check form-check-inline" style="width: 45%;">
-                    <input class="form-check-input" name="mycategory" type="radio">
-                    <span class="form-check-label"> Electronics </span>
-                  </label>
-                  <label class="mb-2 form-check form-check-inline" style="width: 45%;">
-                    <input class="form-check-input" name="mycategory" type="radio">
-                    <span class="form-check-label"> Sports </span>
-                  </label>
-                  <label class="mb-2 form-check form-check-inline" style="width: 45%;">
-                    <input class="form-check-input" name="mycategory" type="radio">
-                    <span class="form-check-label"> Automobiles </span>
-                  </label>
-                  <label class="mb-2 form-check form-check-inline" style="width: 45%;">
-                    <input class="form-check-input" name="mycategory" type="radio">
-                    <span class="form-check-label"> Home interior </span>
-                  </label>
-                  <label class="mb-2 form-check form-check-inline" style="width: 45%;">
-                    <input class="form-check-input" name="mycategory" type="radio">
-                    <span class="form-check-label"> Smartphones </span>
-                  </label>
-                  <label class="mb-2 form-check form-check-inline" style="width: 45%;">
-                    <input class="form-check-input" name="mycategory" type="radio">
-                    <span class="form-check-label"> Books </span>
-                  </label>
-                  <label class="mb-2 form-check form-check-inline" style="width: 45%;">
-                    <input class="form-check-input" name="mycategory" type="radio">
-                    <span class="form-check-label"> Kids item </span>
-                  </label>
-                  <label class="mb-2 form-check form-check-inline" style="width: 45%;">
-                    <input class="form-check-input" name="mycategory" type="radio">
-                    <span class="form-check-label"> Others </span>
-                  </label>
-                </div>
-              </div> <!-- col.// -->
-            </div> <!-- row.// -->
-
-            <hr class="mb-4 mt-0">
-
-            <div class="row">
-              <div class="col-md-4">
-                <h6>4. Media</h6>
-              </div>
-              <div class="col-md-8">
-                <div class="mb-4">
-                  <label class="form-label">Images</label>
-                  <input class="form-control" type="file">
-                </div>
-              </div> <!-- col.// -->
-            </div> <!-- .row end// -->
-            <hr class="mb-4 mt-0">
-            <div class="row">
-              <div class="col-md-4"></div>
-              <div class="col-md-8 ">
-                <div class="d-flex justify-content-end gap-2 flo ">
-                  <button type="button" class="btn btn-light ">Save as draft</button>
-                  <button type="button" class="btn btn-primary">Save and activate </button>
-                </div>
-              </div>
-
+                <hr class="mb-4 mt-0">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6>5. Stok</h6>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-2 text-start">
+                      <input type="text" placeholder="Type here" class="form-control" value="100">
+                    </div>
+                  </div> <!-- col.// -->
+                </div> <!-- row.// -->
+                <div class="row">
+                  <div class="col-md-4"></div>
+                  <div class="col-md-8 ">
+                    <div class="d-flex justify-content-end gap-2 flow ">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Save as draft</button>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Save and activate</button>
+                    </div>
+                  </div>
+                </div> <!-- col.// -->
+              </dsiv> <!-- .row end// -->
             </div> <!-- card end// -->
-
-          </section> <!-- content-main end// -->
-        </main>
-
-        <script>
+          </div>
+        </section> <!-- content-main end// -->
+      </main>
+      <script>
     if (localStorage.getItem("darkmode")) {
       var body_el = document.body;
       body_el.className += 'dark';
     }
   </script>
 
-        <script src="js/jquery-3.5.0.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.5.0.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
 
-        <!-- Custom JS -->
-        <script src="js/script.js?v=1.0"></script>
+      <!-- Custom JS -->
+      <script src="js/script.js?v=1.0"></script>
 
-      </body>
+    </body>
 
-    </html>
+  </html>
