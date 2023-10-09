@@ -1,0 +1,299 @@
+<html>
+
+    <head>
+        <title>Shopping cart pos</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+            integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="fonts/material-icon/css/round.css" />
+        <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+
+    <body class="bg-light">
+        <div style="background-color: #bbdefa;" class="shadow p-2">
+            <div class="container">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark"
+                            style="color: #616A6B ;" aria-current="page"
+                            href="#">
+                            <i class="bi bi-bell"></i> Notifications
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-semibold" href="#"><i class="bi bi-question-circle"></i> Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-semibold"
+                            href="#"><i class="bi bi-globe"></i>
+                            Language</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-semibold" href="sign up.html">Singn Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-semibold" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col-sm-12 col-md-2 pb-4">
+                        <a href="pos.html"><img class="img-fluid"
+                                src="https://laconic.co.th/wp-content/uploads/2017/04/cropped-logo-e1624865695804.png"
+                                alt></a>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-10 d-flex justify-content-center align-items-center">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control"
+                                placeholder="search"
+                                aria-label="Recipient's username"
+                                aria-describedby="button-addon2">
+                            <button class="btn btn-outline-dark"
+                                type="button" id="button-addon2">Search</button>
+                        </div>
+                        <a href="shipping-cart.html" class="text-dark mb-3 mx-3">
+                            <h3><i class="bi bi-cart w-75"></i></h3>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <h3 class="mt-2 p-4">Shipping Cart</h3>
+        <div class="container-fluid">
+            <div class="container-md">
+                <div class="col-md-12">
+                    <div class="text-end">
+                        <button type="button" class="btn btn-dark"><i class="bi bi-cloud-arrow-down-fill fs-5"></i>Import</button>
+                        <button type="button" class="btn btn-dark"><i class="bi bi-cloud-arrow-up-fill fs-5"></i>Export</button>
+                    </div>
+                    <header class="card-header mt-2">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6">
+                                <span>
+                                    <i class="material-icons md-calendar_today"></i>
+                                    <b>Wed, Aug 19, 2020, 4:34PM </b>
+                                </span> <br>
+                                <small class="text-muted">Order ID: 3453012</small>
+                            </div>
+                        </div>
+                    </header> <!-- card-header end// -->
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="table-responsive">
+                                    <table
+                                        class="table border table-hover table-lg">
+                                        <thead>
+                                            <tr>
+                                                <th width="5%"></th>
+                                                <th width="40%">Product</th>
+                                                <th width="20%">Unit Price</th>
+                                                <th width="15%">Quantity</th>
+                                                <th width="20%" class="text-end">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div
+                                                        class="col col-check flex-grow-0 text-center">
+                                                        <div class="form-check">
+                                                            <input
+                                                                class="form-check-input" type="checkbox" value>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="itemside">
+                                                        <div class="left">
+                                                            <img
+                                                                src="./assets/img/ss.png"
+                                                                width="40"
+                                                                height="40"
+                                                                class="img-xs"
+                                                                alt="Item">
+                                                        </div>
+                                                        <div class="info-wrap">
+                                                            <p class="title">Gucci Gucci GG Marmont Matelasse Foldover Top Shoulder Bag.</p></div>
+                                                    </div>
+                                                </td>
+                                                <td> $1,896.98 </td>
+                                                <td><i class="bi bi-dash"></i> 1
+                                                    <i class="bi bi-plus"></i><i
+                                                        class="bi bi-trash-fill float-end "></i></td>
+                                                <td class="text-end"> $1,896.98</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div
+                                                        class="col col-check flex-grow-0 text-center">
+                                                        <div class="form-check">
+                                                            <input
+                                                                class="form-check-input"
+                                                                type="checkbox"
+                                                                value>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="itemside">
+                                                        <div class="left">
+                                                            <img
+                                                                src="./assets/img/3.png"
+                                                                width="40"
+                                                                height="40"
+                                                                class="img-xs"
+                                                                alt="Item">
+                                                        </div>
+                                                        <div class="info-wrap">
+                                                            <p class="title">Gucci
+                                                                Padded Chained.
+                                                            </p></div>
+                                                    </div>
+                                                </td>
+                                                <td> $2,283.90</td>
+                                                <td><i class="bi bi-dash"></i> 1
+                                                    <i class="bi bi-plus"></i><i
+                                                        class="bi bi-trash-fill float-end "></i></td>
+                                                <td class="text-end"> $4,567.8</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div
+                                                        class="col col-check flex-grow-0 text-center">
+                                                        <div class="form-check">
+                                                            <input
+                                                                class="form-check-input"
+                                                                type="checkbox"
+                                                                value>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="itemside">
+                                                        <div class="left">
+                                                            <img
+                                                                src="./assets/img/4.png"
+                                                                width="40"
+                                                                height="40"
+                                                                class="img-xs"
+                                                                alt="Item">
+                                                        </div>
+                                                        <div class="info-wrap">
+                                                            <p class="title">Gucci GG.</p></div>
+                                                    </div>
+                                                </td>
+                                                <td> $2,459.87</td>
+                                                <td><i class="bi bi-dash"></i> 1
+                                                    <i class="bi bi-plus"></i><i
+                                                        class="bi bi-trash-fill float-end"></i></td>
+                                                <td class="text-end"> $7,379.61</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <ar ticle class="float-end">
+                                                        <dl class="dlist">
+                                                            <dt>Subtotal:</dt>
+                                                            <dd>$19,191.95</dd>
+                                                        </dl>
+                                                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                                                            Check out
+                                                          </button>
+                                                          <!-- Modal -->
+                                                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                              <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                  <h5 class="modal-title" id="exampleModalLabel">Shipping</h5>
+                                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                  </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="mb-4 ">
+                                                                        <label class="mb-2 form-check form-check-inline" style="width: 45%;">
+                                                                          <input class="form-check-input" checked name="mycategory" type="checkbox">
+                                                                          <span class="form-check-label">Self pick up</span>
+                                                                        </label>
+                                                                      </div> 
+                                                                      <div class="mb-4 ">
+                                                                        <label class="mb-2 form-check form-check-inline" style="width: 45%;">
+                                                                          <input class="form-check-input" checked name="mycategory" type="checkbox">
+                                                                          <span class="form-check-label">Delivery included</span>
+                                                                        </label>
+                                                                      </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                  <a href="shipping.html"><button type="button" class="btn btn-primary">Confirm</button></a>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                    </ar>
+                                                    <div class="m-2">
+                                                        <div
+                                                            class="content-header">
+                                                            <a href="javascript:history.back()"
+                                                                class="btn btn-light">
+                                                                <i class="bi bi-arrow-left-short fs-1"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-responsive// -->
+                            </div> <!-- col// -->
+                            <div class="col-lg-4">
+                                <div class="box shadow-sm bg-light">
+                                    <h6>Payment info</h6>
+                                    <p>
+                                        <img src="./assets/img/01.png"
+                                            class="border" height="20"> Master
+                                        Card **** **** 4768
+                                        <br>
+                                        Business name: Grand Market LLC <br>
+                                        Phone: +1 (800) 555-154-52
+                                    </p>
+                                </div>
+                                <div class="h-25 pt-4">
+                                    <div class="mb-3">
+                                        <label>Notes</label>
+                                        <textarea class="form-control"
+                                            name="notes" id="notes"
+                                            placeholder="Type some note"></textarea>
+                                    </div>
+                                    <button class="btn btn-dark">Save note</button>
+                                </div>
+                            </div> <!-- col// -->
+
+                        </div>
+                    </div> <!-- card-body end// -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-muted py-5 ">
+        <div class="container">
+            <p>© 2023 Laconic Technology Co., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

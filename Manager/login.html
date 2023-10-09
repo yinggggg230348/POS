@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Login</title>
+
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <link href="css/bootstrap.css?v=1.1" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="fonts/material-icon/css/round.css" />
+
+    <!-- custom style -->
+    <link href="css/ui.css?v=1.1" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css?v=1.1" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <style>
+    .my-button {
+      background-color: #286ec3; /* สีพื้นหลัง */
+      color: white; /* สีข้อความ */
+      padding: 10px 20px; /* ขอบและช่องว่างข้างใน */
+      border: none; /* ลบเส้นขอบ */
+      border-radius: 5px; /* ขอบมนเว้นเรียบ */
+      cursor: pointer; /* สร้าง pointer เมื่อนำเมาส์มาวาง */
+    }
+  
+    .my-button:hover {
+      background-color: #3743c6; /* สีพื้นหลังเมื่อนำเมาส์ไปวาง */
+    }
+    .my-button2 {
+      background-color: #5f2ab4; /* สีพื้นหลัง */
+      color: white; /* สีข้อความ */
+      padding: 10px 20px; /* ขอบและช่องว่างข้างใน */
+      border: none; /* ลบเส้นขอบ */
+      border-radius: 5px; /* ขอบมนเว้นเรียบ */
+      cursor: pointer; /* สร้าง pointer เมื่อนำเมาส์มาวาง */
+    }
+  
+    .my-button2:hover {
+      background-color: #430981; /* สีพื้นหลังเมื่อนำเมาส์ไปวาง */
+    }
+    
+  </style>
+  <body class="bg-light">
+    <div style="background-color: #bbdefa;" class="shadow p-1">
+      <div class="container">
+        <div class="col-sm-12 col-md-2 pb-4 float-start ">
+          <img class="img-fluid w-50 h-50 " src="https://laconic.co.th/wp-content/uploads/2017/04/cropped-logo-e1624865695804.png" alt>
+        </div>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link text-dark" style="color: #616A6B ;" aria-current="page" href="#"><i class="bi bi-bell"></i> Notifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark fw-semibold" href="#"><i class="bi bi-question-circle"></i> Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark fw-semibold" href="#"><i class="bi bi-globe"></i>Language</a>
+          </li>
+          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="sign up.html">Singn Up</a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="content-main">
+      <div class="card shadow mx-auto" style="max-width: 380px; margin-top:100px;">
+        <div class="card-body">
+          <form>
+            <div class="mb-4">
+              <a href="login-POS.html"><button type="button" class="my-button w-100"> POS </button></a>
+              <a href="login-E-Command.html"><button type="button" class="my-button2 w-100 mt-3"> E-Command</button></a>
+            </div> <!-- form-group// -->
+          </form>
+        </div>
+      </div> <!-- card-body.// -->
+    </section> <!-- content-main end// -->
+    <script>
+    if (localStorage.getItem("darkmode")) {
+      var body_el = document.body;
+      body_el.className += 'dark';
+    }
+  </script>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js?v=1.0"></script>
+  </body>
+</html>
