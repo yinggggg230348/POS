@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Barcode Scanner</title>
+</head>
+<body>
+    <h1>Barcode Scanner</h1>
+    <video id="barcode-video" autoplay></video>
+    <script>
+        // รับการเข้าถึงกล้อง
+        navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
+            .then(function (stream) {
+                var video = document.getElementById('barcode-video');
+                video.srcObject = stream;
+                video.onloadedmetadata = function (e) {
+                    video.play();
+                };
+            })
+            .catch(function (err) {
+                console.error('การเข้าถึงกล้องมีปัญหา: ', err);
+            });
+
+        // สร้างออบเจ็กต์สำหรับการสแกนบาร์โค้ด
+        var scanner = new Instascan.Scanner({ video: document.getElementById('barcode-video') });
+        
+        // เมื่อสแกนบาร์โค้ดสำเร็จ
+        scanner.addListener('scan', function (content) {
+            alert('สแกนบาร์โค้ดแล้ว: ' + content);
+        });
+
+        // เริ่มการสแกน
+        Instascan.Camera.getCameras().then(function (cameras) {
+            if (cameras.length > 0) {
+                scanner.start(cameras[0]);
+            } else {
+                console.error('ไม่พบกล้อง');
+            }
+        }).catch(function (err) {
+            console.error('เกิดข้อผิดพลาดในการเรียกใช้กล้อง: ', err);
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/instascan/2.0.0/instascan.min.js"></script>
+</body>
+</html>
