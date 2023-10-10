@@ -7,3 +7,17 @@ img.img-circle {
 .borderless {
     border: 0 !important;
 }
+
+body {
+    margin: 0;
+    /* เอา margin ออก */
+    padding: 0;
+    /* เอา padding ออก */
+    background-image: url("../assets/food/bg.jpg");
+    background-size: cover;
+    /* ขนาดรูปภาพจะถูกปรับให้เต็มหน้าเว็บ */
+    background-repeat: no-repeat;
+    /* ไม่ต้องทำซ้ำภาพ */
+    background-attachment: fixed;
+    margin-bottom: 81px;
+}

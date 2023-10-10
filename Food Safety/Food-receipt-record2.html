@@ -11,18 +11,6 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        body {
-            margin: 0;
-            /* เอา margin ออก */
-            padding: 0;
-            /* เอา padding ออก */
-            background-image: url("../assets/food/bg.jpg");
-            background-size: cover;
-            /* ขนาดรูปภาพจะถูกปรับให้เต็มหน้าเว็บ */
-            background-repeat: no-repeat;
-            /* ไม่ต้องทำซ้ำภาพ */
-            background-attachment: fixed;
-        }
 
         .bg-backdrop {
             background-color: rgba(27, 79, 114, 0.25);
@@ -110,30 +98,44 @@
                             <div class="row">
                                 <div class="col-sm-12 col-md-12 d-flex justify-content-between align-items-center">
                                     <h5 class="mt-4 mr-2">Purchase Order No : </h5>
-                                    <a href="supplier-recrod.html"> <i class="bi bi-search fs-3"></i></a>
+                                    <a href="#"> <i class="bi bi-search fs-3"></i></a>
                                 </div>
 
                             </div>
 
                             <div class="table-responsive">
-                                <table class="table table-bordered table-hover mt-4 border-3">
-                                    <thead>
-                                        <tr class="text-center bg-primary-light">
-                                            <th class="fw-bold " width="10%">No</th>
-                                            <th class="fw-bold" width="20%">Food Item</th>
-                                            <th class="fw-bold" width="20%">Package Standard</th>
-                                            <th class="fw-bold" width="30%">Corrective action</th>
-                                            <th class="fw-bold" width="20%">Action</th>
-                                        </tr>
-                                    </thead>
-                                </table>
+                                <a href="food-item-recrod.html" style="text-decoration: none !important">
+                                    <table class="table table-bordered table-hover mt-4 border-3">
+                                        <thead>
+                                            <tr class="text-center bg-primary-light">
+                                                <th class="fw-bold " width="20%">Purchase Order </th>
+                                                <th class="fw-bold" width="30%">Supplier</th>
+                                                <th class="fw-bold" width="20%">Created By</th>
+                                                <th class="fw-bold" width="30%">Creation Date</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <td>PO 100008</td>
+                                                <td>URC(Thailand) c0.,Ltd</td>
+                                                <td>Surachai</td>
+                                                <td>12-06-2023</td>
+                                            </tr>
+
+
+                                        </tbody>
+
+                                    </table>
+                                </a>
                             </div>
                             <div style="padding-top: 160px;">
                                 <label class="form-label fw-bold h4">Signature :</label>
                                 <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Your signature "></textarea>
                                 <div class="d-flex justify-content-between">
-                                    <a href="#" class="btn btn-dark mt-5">Back</a>
-                                    <a href="supplier.html" class="btn btn-primary mt-5">Save</a>
+                                    <a href="supplier-recrod.html" class="btn btn-dark mt-5">Back</a>
+
                                 </div>
                             </div>
                         </div>
@@ -142,7 +144,7 @@
             </fieldset>
         </div>
     </div>
-    <footer class="text-muted py-6 bg-white fixed-bottom bottom-0">
+    <footer class="text-muted py-6 bg-white ">
         <div class="container p-3">
             <div class="container text-center">
                 <div class="row">
