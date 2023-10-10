@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,34 +20,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+
   </head>
-  <style>
-    .my-button {
-      background-color: #286ec3; /* สีพื้นหลัง */
-      color: white; /* สีข้อความ */
-      padding: 10px 20px; /* ขอบและช่องว่างข้างใน */
-      border: none; /* ลบเส้นขอบ */
-      border-radius: 5px; /* ขอบมนเว้นเรียบ */
-      cursor: pointer; /* สร้าง pointer เมื่อนำเมาส์มาวาง */
-    }
-  
-    .my-button:hover {
-      background-color: #3743c6; /* สีพื้นหลังเมื่อนำเมาส์ไปวาง */
-    }
-    .my-button2 {
-      background-color: #5f2ab4; /* สีพื้นหลัง */
-      color: white; /* สีข้อความ */
-      padding: 10px 20px; /* ขอบและช่องว่างข้างใน */
-      border: none; /* ลบเส้นขอบ */
-      border-radius: 5px; /* ขอบมนเว้นเรียบ */
-      cursor: pointer; /* สร้าง pointer เมื่อนำเมาส์มาวาง */
-    }
-  
-    .my-button2:hover {
-      background-color: #430981; /* สีพื้นหลังเมื่อนำเมาส์ไปวาง */
-    }
-    
-  </style>
+
   <body class="bg-light">
     <div style="background-color: #bbdefa;" class="shadow p-1">
       <div class="container">
@@ -71,14 +47,29 @@
       </div>
     </div>
     <section class="content-main">
+      <!-- ============================ COMPONENT LOGIN   ================================= -->
       <div class="card shadow mx-auto" style="max-width: 380px; margin-top:100px;">
         <div class="card-body">
+          <h4 class="card-title mb-4">Sign in</h4>
           <form>
+            <div class="mb-3">
+              <input class="form-control" placeholder="Username" type="text">
+            </div> <!-- form-group// -->
+            <div class="mb-3">
+              <input class="form-control" placeholder="Password" type="password">
+            </div> <!-- form-group// -->
+            <div class="mb-3">
+              <a href="#" class="float-end">Forgot password?</a>
+              <label class="form-check">
+                <input type="checkbox" class="form-check-input" checked>
+                <span class="form-check-label">Remember</span>
+              </label>
+            </div> <!-- form-group form-check .// -->
             <div class="mb-4">
-              <a href="login-E-Command.html"><button type="button" class="my-button w-100"> Manager </button></a>
-              <a href="#"><button type="button" class="my-button2 w-100 mt-3"> Youtuber</button></a>
+              <a href="../youtuber/pos.html"><button type="button" class="btn btn-primary w-100"> Login </button></a>
             </div> <!-- form-group// -->
           </form>
+          <p class="text-center mb-4">Don't have account? <a href="sign up.html">Sign up</a></p>
         </div>
       </div> <!-- card-body.// -->
     </section> <!-- content-main end// -->
