@@ -1,0 +1,21 @@
+img.img-circle {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.borderless {
+    border: 0 !important;
+}
+
+ .nav-link:hover {
+            color: rgb(81, 225, 172) !important;
+        }
+
+ .nav-link {
+            color: #000000;
+        }
+
+ .active {
+            color: #3399FF !important;
+        }
