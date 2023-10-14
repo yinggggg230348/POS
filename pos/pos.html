@@ -4,20 +4,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>pos</title>
         <link href="css/ui.css?v=1.1" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-            integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
-            crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/bootstrap.css">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous">
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <link href="css/bootstrap.css?v=1.1" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="fonts/material-icon/css/round.css" />
+        <!-- custom style -->
+        <link href="css/responsive.css?v=1.1" rel="stylesheet" />
     </head>
     <style>
         .s{
@@ -29,403 +24,441 @@
         }
     </style>
     <body class="bg-light">
-        <div style="background-color: #bbdefa;" class="shadow">
-            <div style="display:flex; justify-content: space-between;">
-                <div class="col-sm-12 col-md-1 pb-4 m-2">
-                    <a href="pos.html"><img class="img-fluid"
-                            src="https://laconic.co.th/wp-content/uploads/2017/04/cropped-logo-e1624865695804.png"
-                            alt></a>
+        <aside class="navbar-aside" id="offcanvas_aside">
+            <div class="aside-top">
+                <a href="../pos.html" class="brand-wrap">
+                    <img src="https://laconic.co.th/wp-content/uploads/2017/04/cropped-logo-e1624865695804.png" height="46" class="logo" alt="Ecommerce dashboard template">
+                </a>
+                <div>
+                    <button class="btn btn-icon btn-aside-minimize"> <i class="text-muted material-icons md-menu_open"></i> </button>
                 </div>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <div class="nav-link text-dark"
-                            style="color: #0a0b0b ;" aria-current="page">
-                            <i class="bi bi-bell"></i> Notifications
-                            <div class="btn-group">
-                                <div type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-gear-fill fs-5"></i>
-                                </div>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="report.html">Report</a></li>
-                                    <li><a class="dropdown-item" href="Member-list.html">Member</a></li>
-                                    <li><a class="dropdown-item" href="products-list.html">Product</a></li>
-                                    <li><a class="dropdown-item" href="../login-POS.html">Log Out</a></li>
-                                </ul>
-                            </div>
+            </div> <!-- aside-top.// -->
+            <nav>
+                <ul class="menu-aside">
+                    <li class="menu-item">
+                        <a class="menu-link" href="#"> <i class="icon material-icons md-home"></i>
+                            <span class="text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <a class="menu-link" href="#"> <i class="icon material-icons md-shopping_bag"></i>
+                            <span class="text">Products</span>
+                        </a>
+                        <div class="submenu">
+                            <a href="#">Product list </a>
+                            <a href="#">Add product</a>
                         </div>
                     </li>
-                </ul>
-            </div>
-        </div>
-        <section class="content-main">
-            <div class="content-header">
-                <div class="col-md-12 ">
-                    <header class="card-header">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 col-md-6">
-                                <i class="bi bi-calendar"></i>
-                                <span>
-                                    <b>24/09/2023 12:12PM </b>
-                                </span> <br>
-                            </div>
+                    <li class="menu-item has-submenu">
+                        <a class="menu-link" href="#"> <i class="icon material-icons md-shopping_cart"></i>
+                            <span class="text">Orders</span>
+                        </a>
+                        <div class="submenu">
+                            <a href="# ">Order list </a>
+                            <a href="#">Order detail</a>
                         </div>
-                    </header> <!-- card-header end// -->
-                    <div class="card-body col-lg-12 mx-auto text-center">
-                        <div class="row">
-                            <div class="col-lg-12 mx-auto text-center">
-                                <div class="table-responsive">
-                                    <table class="table border table-hover table-lg">
-                                        <thead>
-                                            <tr>
-                                                <th width="5%"></th>
-                                                <th width="40%">Product</th>
-                                                <th width="20%">Unit Price</th>
-                                                <th width="15%">Quantity</th>
-                                                <th width="20%" class="text-end">Total</th>
-                                            </tr>
-                                        </thead>
-                                        <tr>
-                                            <td>
-                                                <div
-                                                    class="col col-check flex-grow-0 text-center">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="itemside">
-                                                    <div class="left">
-                                                        <img
-                                                            src="images/items/T-Shirt.jpg"
-                                                            width="40"
-                                                            height="50"
-                                                            class="img-xs"
-                                                            alt="Item">
-                                                    </div>
-                                                    <div class="info-wrap">
-                                                        <p class="title">T-Shirt</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td> $150 </td>
-                                            <td><i class="bi bi-dash"></i> 1
-                                                <i class="bi bi-plus"></i>
-                                                <i class="bi bi-trash-fill float-end "></i></td>
-                                            <td class="text-end"> $150</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div
-                                                    class="col col-check flex-grow-0 text-center">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="itemside">
-                                                    <div class="left">
-                                                        <img
-                                                            src="images/items/Dress 1.jpg"
-                                                            width="40"
-                                                            height="50"
-                                                            class="img-xs"
-                                                            alt="Item">
-                                                    </div>
-                                                    <div class="info-wrap">
-                                                        <p class="title">Dress</p></div>
-                                                </div>
-                                            </td>
-                                            <td> $199</td>
-                                            <td><i class="bi bi-dash"></i> 1
-                                                <i class="bi bi-plus"></i><i
-                                                    class="bi bi-trash-fill float-end "></i></td>
-                                            <td class="text-end"> $199</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div
-                                                    class="col col-check flex-grow-0 text-center">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="itemside">
-                                                    <div class="left">
-                                                        <img
-                                                            src="images/items/Party Dress.jpg"
-                                                            width="40"
-                                                            height="50"
-                                                            class="img-xs"
-                                                            alt="Item">
-                                                    </div>
-                                                    <div class="info-wrap">
-                                                        <p class="title">Party Dress</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td> $200</td>
-                                            <td><i class="bi bi-dash"></i> 1
-                                                <i class="bi bi-plus"></i><i
-                                                    class="bi bi-trash-fill float-end"></i></td>
-                                            <td class="text-end"> $200</td>
-                                        </tr>
-                                        <table class="table table-borderless text-end">
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <a class="menu-link" href="#"> <i class="icon material-icons md-store"></i>
+                            <span class="text">Members</span>
+                        </a>
+                        <div class="submenu">
+                            <a href="#">Member list</a>
+                            <a href="#">Create member</a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#"> <i class="icon material-icons md-stars"></i> <span class="text">Brands</span> </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#"> <i class="icon material-icons md-monetization_on"></i> <span class="text">Refund</span> </a>
+                    </li>
+                </ul>
+                <hr>
+            </nav>
+        </aside>
+        <main class="main-wrap">
+            <section class="content-main">
+                <div class="content-header">
+                    <div class="col-md-12 ">
+                        <header class="card-header">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-6">
+                                    <i class="bi bi-calendar"></i>
+                                    <span>
+                                        <b>24/09/2023 12:12PM </b>
+                                    </span> <br>
+                                </div>
+                            </div>
+                        </header> <!-- card-header end// -->
+                        <div class="card-body col-lg-12 mx-auto text-center">
+                            <div class="row">
+                                <div class="col-lg-12 mx-auto text-center">
+                                    <div class="table-responsive">
+                                        <table class="table border table-hover table-lg">
                                             <thead>
                                                 <tr>
                                                     <th width="5%"></th>
-                                                    <th width="70%">Subtotal :</th>
-                                                    <th>$549.00</th>
+                                                    <th width="40%">Product</th>
+                                                    <th width="20%">Unit Price</th>
+                                                    <th width="15%">Quantity</th>
+                                                    <th width="20%" class="text-end">Total</th>
                                                 </tr>
-                                                <tr>
-                                                    <th width="5%"></th>
-                                                    <th width="70%">Discount :</th>
-                                                    <th>$00.00</th>
-                                                </tr>
-                                                <tr>
-                                                    <th width="5%"></th>
-                                                    <th width="70%">Tax :</th>
-                                                    <th>$38.29</th>
-                                                </tr>
-                                                <tr>
-                                                    <th width="5%"></th>
-                                                    <th width="70%">Total :</th>
-                                                    <th>$587.29</th>
-                                                </tr>
-                                                
-                                                <tr>
-                                                    <th width="5%"></th>
-                                                    <th width="70%"><i class="bi bi-person-add fs-4" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                                                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-                                                                <div class="modal-dialog ">
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header">
-                                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Member list</h1>
-                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                            <div class="card mb-4">
+                                            </thead>
+                                            <tr>
+                                                <td>
+                                                    <div
+                                                        class="col col-check flex-grow-0 text-center">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="itemside">
+                                                        <div class="left">
+                                                            <img
+                                                                src="images/items/T-Shirt.jpg"
+                                                                width="40"
+                                                                height="50"
+                                                                class="img-xs"
+                                                                alt="Item">
+                                                        </div>
+                                                        <div class="info-wrap">
+                                                            <p class="title">T-Shirt</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td> $150 </td>
+                                                <td><i class="bi bi-dash"></i> 1
+                                                    <i class="bi bi-plus"></i>
+                                                    <i class="bi bi-trash-fill float-end "></i></td>
+                                                <td class="text-end"> $150</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div
+                                                        class="col col-check flex-grow-0 text-center">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="itemside">
+                                                        <div class="left">
+                                                            <img
+                                                                src="images/items/Dress 1.jpg"
+                                                                width="40"
+                                                                height="50"
+                                                                class="img-xs"
+                                                                alt="Item">
+                                                        </div>
+                                                        <div class="info-wrap">
+                                                            <p class="title">Dress</p></div>
+                                                    </div>
+                                                </td>
+                                                <td> $199</td>
+                                                <td><i class="bi bi-dash"></i> 1
+                                                    <i class="bi bi-plus"></i><i
+                                                        class="bi bi-trash-fill float-end "></i></td>
+                                                <td class="text-end"> $199</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div
+                                                        class="col col-check flex-grow-0 text-center">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="itemside">
+                                                        <div class="left">
+                                                            <img
+                                                                src="images/items/Party Dress.jpg"
+                                                                width="40"
+                                                                height="50"
+                                                                class="img-xs"
+                                                                alt="Item">
+                                                        </div>
+                                                        <div class="info-wrap">
+                                                            <p class="title">Party Dress</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td> $200</td>
+                                                <td><i class="bi bi-dash"></i> 1
+                                                    <i class="bi bi-plus"></i><i
+                                                        class="bi bi-trash-fill float-end"></i></td>
+                                                <td class="text-end"> $200</td>
+                                            </tr>
+                                            <table class="table table-borderless text-end">
+                                                <thead>
+                                                    <tr>
+                                                        <th width="5%"></th>
+                                                        <th width="70%">Subtotal :</th>
+                                                        <th>$549.00</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th width="5%"></th>
+                                                        <th width="70%">Discount :</th>
+                                                        <th>$00.00</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th width="5%"></th>
+                                                        <th width="70%">Tax :</th>
+                                                        <th>$38.29</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th width="5%"></th>
+                                                        <th width="70%">Total :</th>
+                                                        <th>$587.29</th>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th width="5%"></th>
+                                                        <th width="70%"><i class="bi bi-person-add fs-4" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                                                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                                                    <div class="modal-dialog ">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Member list</h1>
+                                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body">
                                                                                 <div class="card mb-4">
-                                                                                    <header class="card-header">
-                                                                                        <div class="row gx-3">
-                                                                                            <div class="col-6  me-3">
-                                                                                                <input type="text" placeholder="Search..." class="form-control">
+                                                                                    <div class="card mb-4">
+                                                                                        <header class="card-header">
+                                                                                            <div class="row gx-3">
+                                                                                                <div class="col-6  me-3">
+                                                                                                    <input type="text" placeholder="Search..." class="form-control">
+                                                                                                </div>
+                                                                                                <div class="col-4 ">
+                                                                                                    <select class="form-select">
+                                                                                                        <option>Show 10</option>
+                                                                                                        <option>Show 20</option>
+                                                                                                        <option>Show 30</option>
+                                                                                                    </select>
+                                                                                                </div>
                                                                                             </div>
-                                                                                            <div class="col-4 ">
-                                                                                                <select class="form-select">
-                                                                                                    <option>Show 10</option>
-                                                                                                    <option>Show 20</option>
-                                                                                                    <option>Show 30</option>
-                                                                                                </select>
-                                                                                            </div>
+                                                                                        </header> <!-- card-header end// -->
+                                                                                        <div class="overflow-scroll">
+                                                                                            <div class="card-body">
+                                                                                                <div class="table-responsive">
+                                                                                                    <table class="table table-hover">
+                                                                                                        <thead>
+                                                                                                            <tr>
+                                                                                                                <th>Member</th>
+                                                                                                                <th class="text-end"></th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td width="40%">
+                                                                                                                    <a href="#" class="itemside">
+                                                                                                                        <div class="left">
+                                                                                                                            <img src="images/people/avatar1.jpg" class="img-sm img-avatar" alt="Userpic">
+                                                                                                                        </div>
+                                                                                                                        <div class="info pl-3">
+                                                                                                                            <h6 class="mb-0 title">Alice DelRay</h6>
+                                                                                                                            <small class="text-muted">Member ID: #439</small>
+                                                                                                                        </div>
+                                                                                                                    </a>
+                                                                                                                </td>
+                                                                                                                <td class="text-end">
+                                                                                                                    <a href="#" class="btn btn-light" data-bs-dismiss="modal">Confirm</a>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td width="40%">
+                                                                                                                    <a href="#" class="itemside">
+                                                                                                                        <div class="left">
+                                                                                                                            <img src="images/people/avatar2.jpg" class="img-sm img-avatar" alt="Userpic">
+                                                                                                                        </div>
+                                                                                                                        <div class="info pl-3">
+                                                                                                                            <h6 class="mb-0 title">Mary Monasa</h6>
+                                                                                                                            <small class="text-muted">Member ID: #129</small>
+                                                                                                                        </div>
+                                                                                                                    </a>
+                                                                                                                </td>
+                                                                                                                <td class="text-end">
+                                                                                                                    <a href="#" class="btn btn-light">Confirm</a>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td width="40%">
+                                                                                                                    <a href="#" class="itemside">
+                                                                                                                        <div class="left">
+                                                                                                                            <img src="images/people/avatar3.jpg" class="img-sm img-avatar" alt="Userpic">
+                                                                                                                        </div>
+                                                                                                                        <div class="info pl-3">
+                                                                                                                            <h6 class="mb-0 title">Jonatan Ive</h6>
+                                                                                                                            <small class="text-muted">Member ID: #400</small>
+                                                                                                                        </div>
+                                                                                                                    </a>
+                                                                                                                </td>
+                                                                                                                <td class="text-end">
+                                                                                                                    <a href="#" class="btn btn-light">Confirm</a>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td width="40%">
+                                                                                                                    <a href="#" class="itemside">
+                                                                                                                        <div class="left">
+                                                                                                                            <img src="images/people/avatar1.jpg" class="img-sm img-avatar" alt="Userpic">
+                                                                                                                        </div>
+                                                                                                                        <div class="info pl-3">
+                                                                                                                            <h6 class="mb-0 title">Albert Pushkin</h6>
+                                                                                                                            <small class="text-muted">Member ID: #439</small>
+                                                                                                                        </div>
+                                                                                                                    </a>
+                                                                                                                </td>
+                                                                                                                <td class="text-end">
+                                                                                                                    <a href="#" class="btn btn-light">Confirm</a>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td width="40%">
+                                                                                                                    <a href="#" class="itemside">
+                                                                                                                        <div class="left">
+                                                                                                                            <img src="images/people/avatar4.jpg" class="img-sm img-avatar" alt="Userpic">
+                                                                                                                        </div>
+                                                                                                                        <div class="info pl-3">
+                                                                                                                            <h6 class="mb-0 title">Alex Pushkina</h6>
+                                                                                                                            <small class="text-muted">Member ID: #439</small>
+                                                                                                                        </div>
+                                                                                                                    </a>
+                                                                                                                </td>
+                                                                                                                <td class="text-end">
+                                                                                                                    <a href="#" class="btn btn-light">Confirm</a>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td width="40%">
+                                                                                                                    <a href="#" class="itemside">
+                                                                                                                        <div class="left">
+                                                                                                                            <img src="images/people/avatar1.jpg" class="img-sm img-avatar" alt="Userpic">
+                                                                                                                        </div>
+                                                                                                                        <div class="info pl-3">
+                                                                                                                            <h6 class="mb-0 title">Eleanor Pena</h6>
+                                                                                                                            <small class="text-muted">Member ID: #439</small>
+                                                                                                                        </div>
+                                                                                                                    </a>
+                                                                                                                </td>
+                                                                                                                <td class="text-end">
+                                                                                                                    <a href="#" class="btn btn-light">Confirm</a>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td width="40%">
+                                                                                                                    <a href="#" class="itemside">
+                                                                                                                        <div class="left">
+                                                                                                                            <img src="images/people/avatar2.jpg" class="img-sm img-avatar" alt="Userpic">
+                                                                                                                        </div>
+                                                                                                                        <div class="info pl-3">
+                                                                                                                            <h6 class="mb-0 title">Eleanor Pena</h6>
+                                                                                                                            <small class="text-muted">Member ID: #439</small>
+                                                                                                                        </div>
+                                                                                                                    </a>
+                                                                                                                </td>
+                                                                                                                <td class="text-end">
+                                                                                                                    <a href="#" class="btn btn-light">Confirm</a>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table> <!-- table-responsive.// -->
+                                                                                                </div>
+                                                                                            </div> <!-- card-body end// -->
                                                                                         </div>
-                                                                                    </header> <!-- card-header end// -->
-                                                                                    <div class="overflow-scroll">
-                                                                                        <div class="card-body">
-                                                                                            <div class="table-responsive">
-                                                                                                <table class="table table-hover">
-                                                                                                    <thead>
-                                                                                                        <tr>
-                                                                                                            <th>Member</th>
-                                                                                                            <th class="text-end"></th>
-                                                                                                        </tr>
-                                                                                                    </thead>
-                                                                                                    <tbody>
-                                                                                                        <tr>
-                                                                                                            <td width="40%">
-                                                                                                                <a href="#" class="itemside">
-                                                                                                                    <div class="left">
-                                                                                                                        <img src="images/people/avatar1.jpg" class="img-sm img-avatar" alt="Userpic">
-                                                                                                                    </div>
-                                                                                                                    <div class="info pl-3">
-                                                                                                                        <h6 class="mb-0 title">Alice DelRay</h6>
-                                                                                                                        <small class="text-muted">Member ID: #439</small>
-                                                                                                                    </div>
-                                                                                                                </a>
-                                                                                                            </td>
-                                                                                                            <td class="text-end">
-                                                                                                                <a href="#" class="btn btn-light"  data-bs-dismiss="modal">Confirm</a>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td width="40%">
-                                                                                                                <a href="#" class="itemside">
-                                                                                                                    <div class="left">
-                                                                                                                        <img src="images/people/avatar2.jpg" class="img-sm img-avatar" alt="Userpic">
-                                                                                                                    </div>
-                                                                                                                    <div class="info pl-3">
-                                                                                                                        <h6 class="mb-0 title">Mary Monasa</h6>
-                                                                                                                        <small class="text-muted">Member ID: #129</small>
-                                                                                                                    </div>
-                                                                                                                </a>
-                                                                                                            </td>
-                                                                                                            <td class="text-end">
-                                                                                                                <a href="#" class="btn btn-light">Confirm</a>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td width="40%">
-                                                                                                                <a href="#" class="itemside">
-                                                                                                                    <div class="left">
-                                                                                                                        <img src="images/people/avatar3.jpg" class="img-sm img-avatar" alt="Userpic">
-                                                                                                                    </div>
-                                                                                                                    <div class="info pl-3">
-                                                                                                                        <h6 class="mb-0 title">Jonatan Ive</h6>
-                                                                                                                        <small class="text-muted">Member ID: #400</small>
-                                                                                                                    </div>
-                                                                                                                </a>
-                                                                                                            </td>
-                                                                                                            <td class="text-end">
-                                                                                                                <a href="#" class="btn btn-light">Confirm</a>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td width="40%">
-                                                                                                                <a href="#" class="itemside">
-                                                                                                                    <div class="left">
-                                                                                                                        <img src="images/people/avatar1.jpg" class="img-sm img-avatar" alt="Userpic">
-                                                                                                                    </div>
-                                                                                                                    <div class="info pl-3">
-                                                                                                                        <h6 class="mb-0 title">Albert Pushkin</h6>
-                                                                                                                        <small class="text-muted">Member ID: #439</small>
-                                                                                                                    </div>
-                                                                                                                </a>
-                                                                                                            </td>
-                                                                                                            <td class="text-end">
-                                                                                                                <a href="#" class="btn btn-light">Confirm</a>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td width="40%">
-                                                                                                                <a href="#" class="itemside">
-                                                                                                                    <div class="left">
-                                                                                                                        <img src="images/people/avatar4.jpg" class="img-sm img-avatar" alt="Userpic">
-                                                                                                                    </div>
-                                                                                                                    <div class="info pl-3">
-                                                                                                                        <h6 class="mb-0 title">Alex Pushkina</h6>
-                                                                                                                        <small class="text-muted">Member ID: #439</small>
-                                                                                                                    </div>
-                                                                                                                </a>
-                                                                                                            </td>
-                                                                                                            <td class="text-end">
-                                                                                                                <a href="#" class="btn btn-light">Confirm</a>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td width="40%">
-                                                                                                                <a href="#" class="itemside">
-                                                                                                                    <div class="left">
-                                                                                                                        <img src="images/people/avatar1.jpg" class="img-sm img-avatar" alt="Userpic">
-                                                                                                                    </div>
-                                                                                                                    <div class="info pl-3">
-                                                                                                                        <h6 class="mb-0 title">Eleanor Pena</h6>
-                                                                                                                        <small class="text-muted">Member ID: #439</small>
-                                                                                                                    </div>
-                                                                                                                </a>
-                                                                                                            </td>
-                                                                                                            <td class="text-end">
-                                                                                                                <a href="#" class="btn btn-light">Confirm</a>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                        <tr>
-                                                                                                            <td width="40%">
-                                                                                                                <a href="#" class="itemside">
-                                                                                                                    <div class="left">
-                                                                                                                        <img src="images/people/avatar2.jpg" class="img-sm img-avatar" alt="Userpic">
-                                                                                                                    </div>
-                                                                                                                    <div class="info pl-3">
-                                                                                                                        <h6 class="mb-0 title">Eleanor Pena</h6>
-                                                                                                                        <small class="text-muted">Member ID: #439</small>
-                                                                                                                    </div>
-                                                                                                                </a>
-                                                                                                            </td>
-                                                                                                            <td class="text-end">
-                                                                                                                <a href="#" class="btn btn-light">Confirm</a>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                    </tbody>
-                                                                                                </table> <!-- table-responsive.// -->
-                                                                                            </div>
-                                                                                        </div> <!-- card-body end// -->
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </i>Customer :</th>
-                                                    <th>Alice Delray</th>
-                                                </tr>
-                                            </thead>
-                                        </table>
-                                        <button type="button" class="btn btn-dark float-end" data-toggle="modal" data-target="#exampleModal">Check Out</button>
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Receipt</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body text-center">
-                                                        <p class="fw-bold fs-5">Laconic Technology Co., Ltd</p>
-                                                        <p class="fw-bold ">Brief tax invoice</p>
-                                                        <p class="card-text ">170/44 Ocean Tower1 [14th floor] Rachadaphisek Rd.Klongtoey,Klongtoey,Bangkok 10110.</p>
-                                                        <p class="fw-bold">Tax ID 0-1055-48144-49-9</p>
-                                                    </div>
-                                                    <div class="text-end"> 24/09/2023 12:12PM</div>
-                                                    <div style="border-top: dashed 2px black;"></div>
-                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
-                                                        <p>QTY</p>
-                                                        <p>Detal</p>
-                                                        <p>Total</p>
-                                                    </div>
-                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
-                                                        <p>1</p>
-                                                        <p>T-Shirt</p>
-                                                        <p>$150</p>
-                                                    </div>
-                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
-                                                        <p>1</p>
-                                                        <p>Dress</p>
-                                                        <p> $199</p>
-                                                    </div>
-                                                    <div class="m-2" style="display:flex; justify-content: space-between;">
-                                                        <p>1</p>
-                                                        <p>Party Dress</p>
-                                                        <p>$200</p>
-                                                    </div>
-                                                    <div style="border-top: dashed 2px black;"></div>
-                                                    <div style="display:flex; justify-content: space-between; margin: 5px;">
-                                                        <p>Total </p>
-                                                        <p>$549.00</p>
-                                                    </div>
-                                                    <div style="display:flex; justify-content: space-between; margin: 5px;">
-                                                        <p>Vat</p>
-                                                        <p>37.8</p>
-                                                    </div>
-                                                    <div style="display:flex; justify-content: space-between; margin: 5px;">
-                                                        <p>Total Amount</p>
-                                                        <p>577.8</p>
-                                                    </div>
-                                                    <div style="display:flex; justify-content: space-between; margin: 5px;">
-                                                        <p>Receive cash/change</p>
-                                                        <p>1,000</p>
-                                                        <p>422</p>
-                                                    </div>
-                                                    <div style="border-top: dashed 2px black;"></div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="bi bi-printer fs-4"></i> Print</button>
+                                                            </i>Customer :</th>
+                                                        <th>Alice Delray</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <button type="button" class="btn btn-dark float-end" data-toggle="modal" data-target="#exampleModal">Check Out</button>
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Receipt</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body text-center">
+                                                            <p class="fw-bold fs-5">Laconic Technology Co., Ltd</p>
+                                                            <p class="fw-bold ">Brief tax invoice</p>
+                                                            <p class="card-text ">170/44 Ocean Tower1 [14th floor] Rachadaphisek Rd.Klongtoey,Klongtoey,Bangkok 10110.</p>
+                                                            <p class="fw-bold">Tax ID 0-1055-48144-49-9</p>
+                                                        </div>
+                                                        <div class="text-end"> 24/09/2023 12:12PM</div>
+                                                        <div style="border-top: dashed 2px black;"></div>
+                                                        <div class="m-2" style="display:flex; justify-content: space-between;">
+                                                            <p>QTY</p>
+                                                            <p>Detal</p>
+                                                            <p>Total</p>
+                                                        </div>
+                                                        <div class="m-2" style="display:flex; justify-content: space-between;">
+                                                            <p>1</p>
+                                                            <p>T-Shirt</p>
+                                                            <p>$150</p>
+                                                        </div>
+                                                        <div class="m-2" style="display:flex; justify-content: space-between;">
+                                                            <p>1</p>
+                                                            <p>Dress</p>
+                                                            <p> $199</p>
+                                                        </div>
+                                                        <div class="m-2" style="display:flex; justify-content: space-between;">
+                                                            <p>1</p>
+                                                            <p>Party Dress</p>
+                                                            <p>$200</p>
+                                                        </div>
+                                                        <div style="border-top: dashed 2px black;"></div>
+                                                        <div style="display:flex; justify-content: space-between; margin: 5px;">
+                                                            <p>Total </p>
+                                                            <p>$549.00</p>
+                                                        </div>
+                                                        <div style="display:flex; justify-content: space-between; margin: 5px;">
+                                                            <p>Vat</p>
+                                                            <p>37.8</p>
+                                                        </div>
+                                                        <div style="display:flex; justify-content: space-between; margin: 5px;">
+                                                            <p>Total Amount</p>
+                                                            <p>577.8</p>
+                                                        </div>
+                                                        <div style="display:flex; justify-content: space-between; margin: 5px;">
+                                                            <p>Receive cash/change</p>
+                                                            <p>1,000</p>
+                                                            <p>422</p>
+                                                        </div>
+                                                        <div style="border-top: dashed 2px black;"></div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="bi bi-printer fs-4"></i> Print</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </table>
-                                </div> <!-- table-responsive// -->
-                            </div> <!-- col// -->
-                        </div>
-                    </div> <!-- card-body end// -->
+                                        </table>
+                                    </div> <!-- table-responsive// -->
+                                </div> <!-- col// -->
+                            </div>
+                        </div> <!-- card-body end// -->
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
+        <script>
+            if (localStorage.getItem("darkmode")) {
+              var body_el = document.body;
+              body_el.className += 'dark';
+            }
+          </script>
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Custom JS -->
+        <script src="js/script.js?v=1.0"></script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
